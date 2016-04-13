@@ -28,7 +28,7 @@ def remove_undesirable_lines(command_results)
   break_into_lines(command_results).map { |line|
     line.split(/\s+/)  # break each line into pieces
   }.reject { |line_pieces|
-    line_pieces[1][0] == '#' # reject line comments
+    line_pieces.size < 2 || line_pieces[1][0] == '#' # reject line comments
   }.reject { |line_pieces|
     line_pieces[0][-1] == '#' # reject line comments
   }.select { |line_pieces|
@@ -57,7 +57,9 @@ end
 
 # puts execute(search_for_net_http_command('gem_subset_1'))
 # puts look_for_urls('gem_subset_1')
-puts remove_undesirable_lines(
-       execute(
-         search_for_ip_address_command('gem_subset_1')))
 
+(1..10).each do |dir_num|
+  puts remove_undesirable_lines(
+         execute(
+           search_for_ip_address_command("gem_subset_#{dir_num}")))
+end
