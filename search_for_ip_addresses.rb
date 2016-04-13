@@ -5,7 +5,7 @@ def find_command(directory)
 end
 
 def search_for_ip_address_command(directory)
-  "#{find_command(directory)} | xargs grep -n '[0-9]\\{1,3\\}\\.[0-9]\\{1,3\\}\\.[0-9]\\{1,3\\}\\.[0-9]\\{1,3\\}'"
+  "#{find_command(directory)} | xargs grep -sn '[0-9]\\{1,3\\}\\.[0-9]\\{1,3\\}\\.[0-9]\\{1,3\\}\\.[0-9]\\{1,3\\}'"
 end
 
 def execute(command)
