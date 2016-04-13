@@ -1,0 +1,86 @@
+gem_subset_1/Sipper-1.1.3/sipper/sdp/sdp.rb:39: o=jdoe 2890844526 2890842807 IN IP4 10.47.16.5
+gem_subset_1/Sipper-1.1.3/sipper/sdp/sdp_parser.rb:40: o=jdoe 2890844526 2890842807 IN IP4 10.47.16.5
+gem_subset_1/Sipper-1.1.3/sipper/transaction/transaction.rb:10: Td = 32000 # 17.1.1.2
+gem_subset_1/Sipper-1.1.3/sipper_test/test_sdp.rb:22:o=jdoe 2890844526 2890842807 IN IP4 10.47.16.5
+gem_subset_1/Sipper-1.1.3/sipper_test/test_sdp.rb:37:o=jdoe 2890844526 2890842807 IN IP4 10.47.16.5
+gem_subset_1/Sipper-1.1.3/sipper_test/test_sdp.rb:52:o=jdoe 2890844526 2890842807 IN IP4 10.47.16.5
+gem_subset_1/Sipper-1.1.3/sipper_test/test_sdp.rb:65:o=jdoe 2890844526 2890842807 IN IP4 10.47.16.5
+gem_subset_1/Sipper-1.1.3/sipper_test/test_sdp_parser.rb:58:o=1234 53655765 2353687637 IN IP4 10.17.131.251
+gem_subset_1/Sipper-1.1.3/sipper_test/test_sdp_parser.rb:60:c=IN IP4 10.171.131.251
+gem_subset_1/Sipper-1.1.3/sipper_test/test_sdp_parser.rb:100:o=jdoe 2890844526 2890842807 IN IP4 10.47.16.5
+gem_subset_1/Sipper-1.1.3/sipper_test/test_sdp_parser.rb:115:o=jdoe 2890844526 2890842807 IN IP4 10.47.16.5
+gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:219: when /\A(\d{4})(\d{2})(\d{2})\z/ ; return nil, [$1.to_i, $2.to_i, $3.to_i] # 5.2.1.1
+gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:220: when /\A(\d{4})-(\d{2})\z/ ; return nil, [$1.to_i, $2.to_i] # 5.2.1.2
+gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:221: when /\A(\d{4})\z/ ; return nil, [$1.to_i] # 5.2.1.2
+gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:222: when extra_reg[0] ; return :century,[$1.to_i * 100] # 5.2.1.2
+gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:223: when /\A(\d{4})(\d{3})\z/ ; return :day, [$1.to_i, $2.to_i] # 5.2.2.1
+gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:225: when extra_reg[1] ; return nil, [$1.to_i, $2.to_i, $3.to_i] # 5.2.1.4 a)
+gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:226: when extra_reg[2] ; return nil, [$1.to_i, $2.to_i] # 5.2.1.4 b)
+gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:227: when extra_reg[3] ; return nil, [$1.to_i] # 5.2.1.4 c)
+gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:228: when extra_reg[4] ; return :week, [$1.to_i, $2.to_i, _int($3)] # 5.2.3.4 a-b)
+gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:229: when extra_reg[5] ; return :century,[$1.to_i * 100] # 5.2.1.4 d)
+gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:230: when extra_reg[6] ; return :century,[$1.to_i * 100] unless by # 5.2.1.4 d)
+gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:231: when extra_reg[7] ; return :day, [$1.to_i, $2.to_i] # 5.2.2.3 a)
+gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:237: when /\A(\d{2})(\d{2})(\d{2})\z/ ; return nil, [_century($1,by), $2.to_i, $3.to_i] # 5.2.1.3 a)
+gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:238: when /\A-(\d{2})(\d{2})?\z/ ; return nil, [_century($1,by), _int($2)] # 5.2.1.3 b-c)
+gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:239: when /\A--(\d{2})(\d{2})?\z/ ; return nil, [by, $1.to_i, _int($2)] # 5.2.1.3 d-e)
+gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:240: when /\A(\d{2})(\d{3})\z/ ; return :day, [_century($1,by), $2.to_i] # 5.2.2.2 a)
+gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:241: when /\A-(\d{3})\z/ ; return :day, [by, $1.to_i] # 5.2.2.2 b)
+gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:242: when /\A(\d{2})W(\d{2})(\d{1})?\z/ ; return :week, [_century($1,by), $2.to_i, _int($3)] # 5.2.3.3 a-b)
+gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:243: when /\A-(\d{1})W(\d{2})(\d{1})?\z/ ; return :week, [_decade($1,by), $2.to_i, _int($3)] # 5.2.3.3 c-d)
+gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:244: when /\A-W(\d{2})(\d{1})?\z/ ; return :week, [by, $1.to_i, _int($2)] # 5.2.3.3 e-f)
+gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:250: when /\A---(\d{2})\z/ ; return nil, [by, bm, $1.to_i] # 5.2.1.3 f)
+gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:251: when /\A-W-(\d{1})\z/ ; return :week, [by, bm, $1.to_i] # 5.2.3.3 g)
+gem_subset_4/when_exe-0.4.6/lib/when_exe/tmreference.rb:1244: Instant.new(date) # See JIS X7108 5.3.2.2 e) When::TM::Period は直接 JulianDate を保持できない
+gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2012_1241.rb:8: message="GRScript18.dll before 1.2.2.0 in ActiveScriptRuby (ASR) before 1.8.7 does not properly restrict interaction with an Internet Explorer ActiveX environment, which allows remote attackers to execute arbitrary Ruby code via a crafted HTML document."
+gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2013_4478.rb:8: message = "Sup before 0.13.2.1 and 0.14.x before 0.14.1.1 allows remote attackers to execute arbitrary commands via shell metacharacters in the filename of an email attachment."
+gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2013_4479.rb:8: message = "lib/sup/message_chunks.rb in Sup before 0.13.2.1 and 0.14.x before 0.14.1.1 allows remote attackers to execute arbitrary commands via shell metacharacters in the content_type of an email attachment."
+gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2013_7086.rb:8: message = "The message function in lib/webbynode/notify.rb in the Webbynode gem 1.0.5.3 and earlier for Ruby allows context-dependent attackers to execute arbitrary commands via shell metacharacters in a growlnotify message."
+gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_1819.rb:12: message="Nokogiri versions before 1.6.6.4 contain a vulnerable version of libxml2 as a C extension. The vulnerability allows for memory consumption denial of service."
+gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_1819.rb:25: :mitigation=>"Please upgrade nokogiri gem to version 1.6.6.4 or later.",
+gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_5312.rb:21: :mitigation=>"Please upgrade nokogiri gem to version 1.6.7.1 or later.",
+gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_7497.rb:22: :mitigation=>"Please upgrade nokogiri gem to version 1.6.7.1 or later.",
+gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_7498.rb:22: :mitigation=>"Please upgrade nokogiri gem to version 1.6.7.1 or later.",
+gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_7499.rb:22: :mitigation=>"Please upgrade nokogiri gem to version 1.6.7.1 or later.",
+gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_7500.rb:22: :mitigation=>"Please upgrade nokogiri gem to version 1.6.7.1 or later.",
+gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_8241.rb:22: :mitigation=>"Please upgrade nokogiri gem to version 1.6.7.1 or later.",
+gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_8242.rb:22: :mitigation=>"Please upgrade nokogiri gem to version 1.6.7.1 or later.",
+gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_8317.rb:22: :mitigation=>"Please upgrade nokogiri gem to version 1.6.7.1 or later.",
+gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2016_2097.rb:25: :mitigation=>"Please upgrade actionview gem to version 3.2.22.2, 4.1.14.2 or later.",
+gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:161:attributetype ( 2.5.4.35 NAME 'userPassword' DESC 'RFC2256/2307: password of user' EQUALITY octetStringMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.40{128} )
+gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:162:attributetype ( 2.5.4.3 NAME ( 'cn' 'commonName' ) DESC 'RFC2256: common name(s) for which the entity is known by' SUP name )
+gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:163:attributetype ( 2.5.4.41 NAME 'name' DESC 'RFC2256: common supertype of name attributes' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{32768} )
+gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:164:attributetype ( 2.5.4.49 NAME 'distinguishedName' DESC 'RFC2256: common supertype of DN attributes' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 )
+gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:166:attributetype ( 2.5.4.1 NAME ( 'aliasedObjectName' 'aliasedEntryName' ) DESC 'RFC2256: name of aliased object' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 SINGLE-VALUE )
+gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:168:attributetype ( 2.5.21.8 NAME 'matchingRuleUse' DESC 'RFC2252: matching rule uses' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.31 USAGE directoryOperation )
+gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:169:attributetype ( 2.5.21.6 NAME 'objectClasses' DESC 'RFC2252: object classes' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.37 USAGE directoryOperation )
+gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:170:attributetype ( 2.5.21.5 NAME 'attributeTypes' DESC 'RFC2252: attribute types' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.3 USAGE directoryOperation )
+gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:171:attributetype ( 2.5.21.4 NAME 'matchingRules' DESC 'RFC2252: matching rules' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.30 USAGE directoryOperation )
+gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:181:attributetype ( 2.5.18.10 NAME 'subschemaSubentry' DESC 'RFC2252: name of controlling subschema entry' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:182:attributetype ( 2.5.18.9 NAME 'hasSubordinates' DESC 'X.501: entry has children' EQUALITY booleanMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.7 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:183:attributetype ( 2.5.18.4 NAME 'modifiersName' DESC 'RFC2252: name of last modifier' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:184:attributetype ( 2.5.18.3 NAME 'creatorsName' DESC 'RFC2252: name of creator' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:185:attributetype ( 2.5.18.2 NAME 'modifyTimestamp' DESC 'RFC2252: time which object was last modified' EQUALITY generalizedTimeMatch ORDERING generalizedTimeOrderingMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.24 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:186:attributetype ( 2.5.18.1 NAME 'createTimestamp' DESC 'RFC2252: time which object was created' EQUALITY generalizedTimeMatch ORDERING generalizedTimeOrderingMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.24 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:187:attributetype ( 2.5.21.9 NAME 'structuralObjectClass' DESC 'X.500(93): structural object class of entry' EQUALITY objectIdentifierMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.38 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:188:attributetype ( 2.5.4.0 NAME 'objectClass' DESC 'RFC2256: object classes of the entity' EQUALITY objectIdentifierMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.38 )
+gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:190:attributetype ( 2.5.21.1 NAME 'dITStructureRules' EQUALITY integerFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.17 USAGE directoryOperation )
+gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:191:attributetype ( 2.5.21.7 NAME 'nameForms' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.35 USAGE directoryOperation )
+gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:192:attributetype ( 2.5.21.2 NAME 'dITContentRules' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.16 USAGE directoryOperation )
+gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:194:objectclass ( 2.5.20.1 NAME 'subschema' DESC 'RFC2252: controlling subschema (sub)entry' AUXILIARY MAY ( dITStructureRules $ nameForms $ ditContentRules $ objectClasses $ attributeTypes $ matchingRules $ matchingRuleUse ) )
+gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:196:#objectClass ( 2.5.17.0 NAME 'subentry' SUP top STRUCTURAL MUST ( cn $ subtreeSpecification ) )
+gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:199:objectClass ( 2.5.6.1 NAME 'alias' DESC 'RFC2256: an alias' SUP top STRUCTURAL MUST aliasedObjectName )
+gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:201:objectClass ( 2.5.6.0 NAME 'top' DESC 'top of the superclass chain' ABSTRACT MUST objectClass )
+gem_subset_5/SkypeR-0.0.9/lib/skyper/object.rb:512: * INPUT - New in API version 3.5.0.202 Can have following values:
+gem_subset_5/SkypeR-0.0.9/lib/skyper/object.rb:516: * OUTPUT - can have all the same values as INPUT property. New in API version 3.5.0.202
+gem_subset_5/SkypeR-0.0.9/lib/skyper/object.rb:517: * CAPTURE_MIC - can have all the same values as INPUT and OUTPUT properties. New in API version 3.5.0.202
+gem_subset_7/asa_console-0.1.2/script/test_names.rb:18: asa.config_exec!("name 192.0.2.1 ASATest1 description What's in a name? That which we call a rose...")
+gem_subset_7/asa_console-0.1.2/script/test_names.rb:19: asa.config_exec!("name 192.0.2.2 ASATest2")
+gem_subset_7/isaac_toolbelt-0.1.3/lib/isaac_toolbelt.rb:135: until system('ping -c 1 192.168.2.15 > /dev/null 2>&1') do
+gem_subset_9/openxml-docx-0.10.2/lib/openxml/docx/attribute_builder.rb:300: raise ArgumentError, message unless value.is_a?(String) && value =~ /-?[0-9]+(\.[0-9]+)?%/ # Regex supplied in sec. 22.9.2.9 of Office Open XML docs
+gem_subset_9/openxml-docx-0.10.2/lib/openxml/docx/elements/embed_bold.rb:8: attribute :font_key, displays_as: :fontKey, matches: /\{[0-9A-F]{8}\-[0-9A-F]{4}\-[0-9A-F]{4}\-[0-9A-F]{4}\-[0-9A-F]{12}\}/ # Regex taken from spec section 22.9.2.4
+gem_subset_9/openxml-docx-0.10.2/lib/openxml/docx/elements/embed_bold_italic.rb:8: attribute :font_key, displays_as: :fontKey, matches: /\{[0-9A-F]{8}\-[0-9A-F]{4}\-[0-9A-F]{4}\-[0-9A-F]{4}\-[0-9A-F]{12}\}/ # Regex taken from spec section 22.9.2.4
+gem_subset_9/openxml-docx-0.10.2/lib/openxml/docx/elements/embed_italic.rb:8: attribute :font_key, displays_as: :fontKey, matches: /\{[0-9A-F]{8}\-[0-9A-F]{4}\-[0-9A-F]{4}\-[0-9A-F]{4}\-[0-9A-F]{12}\}/ # Regex taken from spec section 22.9.2.4
+gem_subset_9/openxml-docx-0.10.2/lib/openxml/docx/elements/embed_regular.rb:8: attribute :font_key, displays_as: :fontKey, matches: /\{[0-9A-F]{8}\-[0-9A-F]{4}\-[0-9A-F]{4}\-[0-9A-F]{4}\-[0-9A-F]{12}\}/ # Regex taken from spec section 22.9.2.4
+gem_subset_9/openxml-docx-0.10.2/lib/openxml/drawingml/elements/preset_geometry.rb:204: wedgeRoundRectCallout ) # Office Open XML spec section 20.1.10.55
+gem_subset_9/openxml-docx-0.10.2/lib/openxml/drawingml/elements/shape_guide.rb:17: def ok_formulae # Office Open XML spec section 20.1.9.11
