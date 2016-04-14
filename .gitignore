@@ -1,2 +1,2 @@
-all_gems
-gem_subset_*
+gems
+remote_gems_list.txt
