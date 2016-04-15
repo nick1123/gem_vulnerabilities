@@ -2,10 +2,6 @@ def buckets
   100
 end
 
-def create_directories
-  1.upto(buckets) {|num| `mkdir gem_subset_#{num}` }
-end
-
 def full_gem_list
   @full_gem_list ||= `ls all_gems`.strip.split(/\s+/)
 end
@@ -35,7 +31,6 @@ def unpack_gems
   end
 end
 
-# create_directories
 # copy_gems_into_subdirectories
 unpack_gems
 
