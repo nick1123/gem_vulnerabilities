@@ -30,6 +30,9 @@ Verify the number of files in each subdirectory
 
     for f in `ls gems/ | grep subset` ; do echo $f ": " `ls gems/$f | wc -l` files ; done
 
+Unpack the gems.  Took me ~10 hours
+
+    ruby unpack_gems.rb
 
 
 ruby search_for_ip_addresses.rb 100 > results_for_ip_address_search.txt

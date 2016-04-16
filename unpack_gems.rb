@@ -1,10 +1,6 @@
-def buckets
-  100
-end
-
 def unpack_gems
-  1.upto(buckets) do |num|
-    dir = "gem_subset_#{num}"
+  0.upto(99) do |num|
+    dir = "gems/subset_#{num.to_s.rjust(2, '0')}"
     `ls #{dir}`.strip.split(/\s+/).each do |gem|
       cmd = "gem unpack #{dir}/#{gem} --target=#{dir}"
       puts cmd
@@ -13,6 +9,5 @@ def unpack_gems
   end
 end
 
-# copy_gems_into_subdirectories
 unpack_gems
 
