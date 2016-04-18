@@ -1,305 +1,413 @@
-gem_subset_1/Sipper-1.1.3/sipper/sdp/sdp.rb:39: o=jdoe 2890844526 2890842807 IN IP4 10.47.16.5
-gem_subset_1/Sipper-1.1.3/sipper/sdp/sdp_parser.rb:40: o=jdoe 2890844526 2890842807 IN IP4 10.47.16.5
-gem_subset_1/Sipper-1.1.3/sipper/transaction/transaction.rb:10: Td = 32000 # 17.1.1.2
-gem_subset_1/Sipper-1.1.3/sipper_test/test_sdp.rb:22:o=jdoe 2890844526 2890842807 IN IP4 10.47.16.5
-gem_subset_1/Sipper-1.1.3/sipper_test/test_sdp.rb:37:o=jdoe 2890844526 2890842807 IN IP4 10.47.16.5
-gem_subset_1/Sipper-1.1.3/sipper_test/test_sdp.rb:52:o=jdoe 2890844526 2890842807 IN IP4 10.47.16.5
-gem_subset_1/Sipper-1.1.3/sipper_test/test_sdp.rb:65:o=jdoe 2890844526 2890842807 IN IP4 10.47.16.5
-gem_subset_1/Sipper-1.1.3/sipper_test/test_sdp_parser.rb:58:o=1234 53655765 2353687637 IN IP4 10.17.131.251
-gem_subset_1/Sipper-1.1.3/sipper_test/test_sdp_parser.rb:60:c=IN IP4 10.171.131.251
-gem_subset_1/Sipper-1.1.3/sipper_test/test_sdp_parser.rb:100:o=jdoe 2890844526 2890842807 IN IP4 10.47.16.5
-gem_subset_1/Sipper-1.1.3/sipper_test/test_sdp_parser.rb:115:o=jdoe 2890844526 2890842807 IN IP4 10.47.16.5
-gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:219: when /\A(\d{4})(\d{2})(\d{2})\z/ ; return nil, [$1.to_i, $2.to_i, $3.to_i] # 5.2.1.1
-gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:220: when /\A(\d{4})-(\d{2})\z/ ; return nil, [$1.to_i, $2.to_i] # 5.2.1.2
-gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:221: when /\A(\d{4})\z/ ; return nil, [$1.to_i] # 5.2.1.2
-gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:222: when extra_reg[0] ; return :century,[$1.to_i * 100] # 5.2.1.2
-gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:223: when /\A(\d{4})(\d{3})\z/ ; return :day, [$1.to_i, $2.to_i] # 5.2.2.1
-gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:225: when extra_reg[1] ; return nil, [$1.to_i, $2.to_i, $3.to_i] # 5.2.1.4 a)
-gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:226: when extra_reg[2] ; return nil, [$1.to_i, $2.to_i] # 5.2.1.4 b)
-gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:227: when extra_reg[3] ; return nil, [$1.to_i] # 5.2.1.4 c)
-gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:228: when extra_reg[4] ; return :week, [$1.to_i, $2.to_i, _int($3)] # 5.2.3.4 a-b)
-gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:229: when extra_reg[5] ; return :century,[$1.to_i * 100] # 5.2.1.4 d)
-gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:230: when extra_reg[6] ; return :century,[$1.to_i * 100] unless by # 5.2.1.4 d)
-gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:231: when extra_reg[7] ; return :day, [$1.to_i, $2.to_i] # 5.2.2.3 a)
-gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:237: when /\A(\d{2})(\d{2})(\d{2})\z/ ; return nil, [_century($1,by), $2.to_i, $3.to_i] # 5.2.1.3 a)
-gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:238: when /\A-(\d{2})(\d{2})?\z/ ; return nil, [_century($1,by), _int($2)] # 5.2.1.3 b-c)
-gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:239: when /\A--(\d{2})(\d{2})?\z/ ; return nil, [by, $1.to_i, _int($2)] # 5.2.1.3 d-e)
-gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:240: when /\A(\d{2})(\d{3})\z/ ; return :day, [_century($1,by), $2.to_i] # 5.2.2.2 a)
-gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:241: when /\A-(\d{3})\z/ ; return :day, [by, $1.to_i] # 5.2.2.2 b)
-gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:242: when /\A(\d{2})W(\d{2})(\d{1})?\z/ ; return :week, [_century($1,by), $2.to_i, _int($3)] # 5.2.3.3 a-b)
-gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:243: when /\A-(\d{1})W(\d{2})(\d{1})?\z/ ; return :week, [_decade($1,by), $2.to_i, _int($3)] # 5.2.3.3 c-d)
-gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:244: when /\A-W(\d{2})(\d{1})?\z/ ; return :week, [by, $1.to_i, _int($2)] # 5.2.3.3 e-f)
-gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:250: when /\A---(\d{2})\z/ ; return nil, [by, bm, $1.to_i] # 5.2.1.3 f)
-gem_subset_4/when_exe-0.4.6/lib/when_exe/basictypes.rb:251: when /\A-W-(\d{1})\z/ ; return :week, [by, bm, $1.to_i] # 5.2.3.3 g)
-gem_subset_4/when_exe-0.4.6/lib/when_exe/tmreference.rb:1244: Instant.new(date) # See JIS X7108 5.3.2.2 e) When::TM::Period は直接 JulianDate を保持できない
-gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2012_1241.rb:8: message="GRScript18.dll before 1.2.2.0 in ActiveScriptRuby (ASR) before 1.8.7 does not properly restrict interaction with an Internet Explorer ActiveX environment, which allows remote attackers to execute arbitrary Ruby code via a crafted HTML document."
-gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2013_4478.rb:8: message = "Sup before 0.13.2.1 and 0.14.x before 0.14.1.1 allows remote attackers to execute arbitrary commands via shell metacharacters in the filename of an email attachment."
-gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2013_4479.rb:8: message = "lib/sup/message_chunks.rb in Sup before 0.13.2.1 and 0.14.x before 0.14.1.1 allows remote attackers to execute arbitrary commands via shell metacharacters in the content_type of an email attachment."
-gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2013_7086.rb:8: message = "The message function in lib/webbynode/notify.rb in the Webbynode gem 1.0.5.3 and earlier for Ruby allows context-dependent attackers to execute arbitrary commands via shell metacharacters in a growlnotify message."
-gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_1819.rb:12: message="Nokogiri versions before 1.6.6.4 contain a vulnerable version of libxml2 as a C extension. The vulnerability allows for memory consumption denial of service."
-gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_1819.rb:25: :mitigation=>"Please upgrade nokogiri gem to version 1.6.6.4 or later.",
-gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_5312.rb:21: :mitigation=>"Please upgrade nokogiri gem to version 1.6.7.1 or later.",
-gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_7497.rb:22: :mitigation=>"Please upgrade nokogiri gem to version 1.6.7.1 or later.",
-gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_7498.rb:22: :mitigation=>"Please upgrade nokogiri gem to version 1.6.7.1 or later.",
-gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_7499.rb:22: :mitigation=>"Please upgrade nokogiri gem to version 1.6.7.1 or later.",
-gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_7500.rb:22: :mitigation=>"Please upgrade nokogiri gem to version 1.6.7.1 or later.",
-gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_8241.rb:22: :mitigation=>"Please upgrade nokogiri gem to version 1.6.7.1 or later.",
-gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_8242.rb:22: :mitigation=>"Please upgrade nokogiri gem to version 1.6.7.1 or later.",
-gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_8317.rb:22: :mitigation=>"Please upgrade nokogiri gem to version 1.6.7.1 or later.",
-gem_subset_5/dawnscanner-1.6.2/lib/dawn/kb/cve_2016_2097.rb:25: :mitigation=>"Please upgrade actionview gem to version 3.2.22.2, 4.1.14.2 or later.",
-gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:161:attributetype ( 2.5.4.35 NAME 'userPassword' DESC 'RFC2256/2307: password of user' EQUALITY octetStringMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.40{128} )
-gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:162:attributetype ( 2.5.4.3 NAME ( 'cn' 'commonName' ) DESC 'RFC2256: common name(s) for which the entity is known by' SUP name )
-gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:163:attributetype ( 2.5.4.41 NAME 'name' DESC 'RFC2256: common supertype of name attributes' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{32768} )
-gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:164:attributetype ( 2.5.4.49 NAME 'distinguishedName' DESC 'RFC2256: common supertype of DN attributes' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 )
-gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:166:attributetype ( 2.5.4.1 NAME ( 'aliasedObjectName' 'aliasedEntryName' ) DESC 'RFC2256: name of aliased object' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 SINGLE-VALUE )
-gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:168:attributetype ( 2.5.21.8 NAME 'matchingRuleUse' DESC 'RFC2252: matching rule uses' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.31 USAGE directoryOperation )
-gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:169:attributetype ( 2.5.21.6 NAME 'objectClasses' DESC 'RFC2252: object classes' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.37 USAGE directoryOperation )
-gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:170:attributetype ( 2.5.21.5 NAME 'attributeTypes' DESC 'RFC2252: attribute types' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.3 USAGE directoryOperation )
-gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:171:attributetype ( 2.5.21.4 NAME 'matchingRules' DESC 'RFC2252: matching rules' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.30 USAGE directoryOperation )
-gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:181:attributetype ( 2.5.18.10 NAME 'subschemaSubentry' DESC 'RFC2252: name of controlling subschema entry' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
-gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:182:attributetype ( 2.5.18.9 NAME 'hasSubordinates' DESC 'X.501: entry has children' EQUALITY booleanMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.7 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
-gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:183:attributetype ( 2.5.18.4 NAME 'modifiersName' DESC 'RFC2252: name of last modifier' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
-gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:184:attributetype ( 2.5.18.3 NAME 'creatorsName' DESC 'RFC2252: name of creator' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
-gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:185:attributetype ( 2.5.18.2 NAME 'modifyTimestamp' DESC 'RFC2252: time which object was last modified' EQUALITY generalizedTimeMatch ORDERING generalizedTimeOrderingMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.24 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
-gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:186:attributetype ( 2.5.18.1 NAME 'createTimestamp' DESC 'RFC2252: time which object was created' EQUALITY generalizedTimeMatch ORDERING generalizedTimeOrderingMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.24 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
-gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:187:attributetype ( 2.5.21.9 NAME 'structuralObjectClass' DESC 'X.500(93): structural object class of entry' EQUALITY objectIdentifierMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.38 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
-gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:188:attributetype ( 2.5.4.0 NAME 'objectClass' DESC 'RFC2256: object classes of the entity' EQUALITY objectIdentifierMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.38 )
-gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:190:attributetype ( 2.5.21.1 NAME 'dITStructureRules' EQUALITY integerFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.17 USAGE directoryOperation )
-gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:191:attributetype ( 2.5.21.7 NAME 'nameForms' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.35 USAGE directoryOperation )
-gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:192:attributetype ( 2.5.21.2 NAME 'dITContentRules' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.16 USAGE directoryOperation )
-gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:194:objectclass ( 2.5.20.1 NAME 'subschema' DESC 'RFC2252: controlling subschema (sub)entry' AUXILIARY MAY ( dITStructureRules $ nameForms $ ditContentRules $ objectClasses $ attributeTypes $ matchingRules $ matchingRuleUse ) )
-gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:196:#objectClass ( 2.5.17.0 NAME 'subentry' SUP top STRUCTURAL MUST ( cn $ subtreeSpecification ) )
-gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:199:objectClass ( 2.5.6.1 NAME 'alias' DESC 'RFC2256: an alias' SUP top STRUCTURAL MUST aliasedObjectName )
-gem_subset_5/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:201:objectClass ( 2.5.6.0 NAME 'top' DESC 'top of the superclass chain' ABSTRACT MUST objectClass )
-gem_subset_5/SkypeR-0.0.9/lib/skyper/object.rb:512: * INPUT - New in API version 3.5.0.202 Can have following values:
-gem_subset_5/SkypeR-0.0.9/lib/skyper/object.rb:516: * OUTPUT - can have all the same values as INPUT property. New in API version 3.5.0.202
-gem_subset_5/SkypeR-0.0.9/lib/skyper/object.rb:517: * CAPTURE_MIC - can have all the same values as INPUT and OUTPUT properties. New in API version 3.5.0.202
-gem_subset_7/asa_console-0.1.2/script/test_names.rb:18: asa.config_exec!("name 192.0.2.1 ASATest1 description What's in a name? That which we call a rose...")
-gem_subset_7/asa_console-0.1.2/script/test_names.rb:19: asa.config_exec!("name 192.0.2.2 ASATest2")
-gem_subset_7/isaac_toolbelt-0.1.3/lib/isaac_toolbelt.rb:135: until system('ping -c 1 192.168.2.15 > /dev/null 2>&1') do
-gem_subset_9/openxml-docx-0.10.2/lib/openxml/docx/attribute_builder.rb:300: raise ArgumentError, message unless value.is_a?(String) && value =~ /-?[0-9]+(\.[0-9]+)?%/ # Regex supplied in sec. 22.9.2.9 of Office Open XML docs
-gem_subset_9/openxml-docx-0.10.2/lib/openxml/docx/elements/embed_bold.rb:8: attribute :font_key, displays_as: :fontKey, matches: /\{[0-9A-F]{8}\-[0-9A-F]{4}\-[0-9A-F]{4}\-[0-9A-F]{4}\-[0-9A-F]{12}\}/ # Regex taken from spec section 22.9.2.4
-gem_subset_9/openxml-docx-0.10.2/lib/openxml/docx/elements/embed_bold_italic.rb:8: attribute :font_key, displays_as: :fontKey, matches: /\{[0-9A-F]{8}\-[0-9A-F]{4}\-[0-9A-F]{4}\-[0-9A-F]{4}\-[0-9A-F]{12}\}/ # Regex taken from spec section 22.9.2.4
-gem_subset_9/openxml-docx-0.10.2/lib/openxml/docx/elements/embed_italic.rb:8: attribute :font_key, displays_as: :fontKey, matches: /\{[0-9A-F]{8}\-[0-9A-F]{4}\-[0-9A-F]{4}\-[0-9A-F]{4}\-[0-9A-F]{12}\}/ # Regex taken from spec section 22.9.2.4
-gem_subset_9/openxml-docx-0.10.2/lib/openxml/docx/elements/embed_regular.rb:8: attribute :font_key, displays_as: :fontKey, matches: /\{[0-9A-F]{8}\-[0-9A-F]{4}\-[0-9A-F]{4}\-[0-9A-F]{4}\-[0-9A-F]{12}\}/ # Regex taken from spec section 22.9.2.4
-gem_subset_9/openxml-docx-0.10.2/lib/openxml/drawingml/elements/preset_geometry.rb:204: wedgeRoundRectCallout ) # Office Open XML spec section 20.1.10.55
-gem_subset_9/openxml-docx-0.10.2/lib/openxml/drawingml/elements/shape_guide.rb:17: def ok_formulae # Office Open XML spec section 20.1.9.11
-gem_subset_12/knife-terremark-0.5.0/lib/chef/knife/terremark_server_create.rb:92:echo nameserver 208.67.222.222 > /etc/resolv.conf
-gem_subset_12/knife-terremark-0.5.0/lib/chef/knife/terremark_server_create.rb:93:echo nameserver 208.67.220.220 >> /etc/resolv.conf
-gem_subset_12/sumodev-1.2.1/lib/sumodev/commands/box.rb:78:nameserver 10.11.12.13
-gem_subset_13/chef-extensions-0.4.0/lib/chef-extensions.rb:15: `ping -c 1 8.8.8.8 -W 2`.include? "1 received"
-gem_subset_13/exception_handling-1.2.1/lib/exception_handling.rb:59:REMOTE_ADDR: 10.251.34.225
-gem_subset_15/cisco_node_utils-1.2.0/tests/test_aaa_authorization_service.rb:36: 'tacacs-server host 10.122.197.197 key testing123',
-gem_subset_15/cisco_node_utils-1.2.0/tests/test_snmp_notification_receiver.rb:40: config('no snmp-server host 4.5.6.7 informs version 3 priv ab udp-port 45',
-gem_subset_17/fluent-plugin-mobile-carrier-0.0.4/lib/fluent/plugin/out_mobile_carrier.rb:89: IPV4MASK = 0xFFFFFFFF # 255.255.255.255
-gem_subset_21/auser-poolparty-1.3.17/lib/dependency_resolvers/chef/resources/route.rb:19:* <tt>netmask</tt> The decimal representation of the network mask eg 255.255.255.0
-gem_subset_21/collins_shell-0.2.23/lib/collins_shell/console.rb:12: if cmplns.is_a?(Array) then # Work around for breakage between pry 0.9.9.6 and 0.9.12
-gem_subset_21/parslet-1.7.1/example/ip_address.rb:108: 255.255.255.255
-gem_subset_21/warbler-1.4.9/lib/warbler/jar.rb:290: zipfile.mkdir(entry.dup) # in case it's frozen rubyzip 0.9.6.1 workaround
-gem_subset_25/intersect_rails_composer-0.0.7/recipes/extras.rb:45: raise "Please update rvm gem to 1.11.3.5 or newer"
-gem_subset_26/docgenerator-2.1.1/unittest/unittest_creole.rb:522:****Listentry 2.2.1.1
-gem_subset_26/docgenerator-2.1.1/unittest/unittest_wikimedia.rb:136:****Listentry 2.2.1.1
-gem_subset_27/pione-0.5.0/lib/pione/test-helper/internet-connectivity.rb:5: `ping -c 3 -W 1 8.8.8.8 >> /dev/null`
-gem_subset_29/validate_as_email-3.0.0/lib/validate_as_email/rspec.rb:42: 8.8.8.8
-gem_subset_31/toolmantim-zeroconf-0.0.2/samples/v1demo.rb:55: coolweb.local:80 at IP 192.168.0.12
-gem_subset_31/toolmantim-zeroconf-0.0.2/samples/v1demo.rb:60: coolweb.local:80 at IP 192.168.0.12
-gem_subset_31/toolmantim-zeroconf-0.0.2/samples/v1demo.rb:65: emb000102030405.local:23 at IP 192.168.0.93
-gem_subset_33/relevance_ipaddress-0.5.0/lib/ipaddress/ipv4.rb:32: /^10./ => 16, # Class B, from 128.0.0.0 to 191.255.255.255
-gem_subset_33/relevance_ipaddress-0.5.0/lib/ipaddress/ipv4.rb:33: /^110/ => 24 # Class C, D and E, from 192.0.0.0 to 255.255.255.254
-gem_subset_37/super-test-1.0.4/lib/common/data_house.rb:354: host: 10.81.13.169
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:204:- 1.7.1.8 Add Enumerable#map_with_index
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:205:- 1.7.1.6 Add ActiveRecord::SaveExtensions#save_false_then_reload!
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:206:- 1.7.1.3 Add XML#strip_xxx
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:207:- 1.7.1.2 Update gems: Gemcutter, Ruby 1.9.1, JRuby sqlite3
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:208:- 1.7.1.0 Add XML attributes methods #
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:209:- 1.7.0.9 Add Enumerable #hash_by, #index_by
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:210:- 1.7.0.7 Add Array#to_tsv, String#split_tsv, improve Array#to_csv
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:211:- 1.7.0.6 Add Array#shuffle, Array#shuffle!
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:212:- 1.7.0.5 Add Array#shifted, Array#rest, Array#car, Array#cdr
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:213:- 1.7.0.4 Upgrade IO#readrows and #readrow to use options
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:214:- 1.7.0.2 Add Array#to_tdf
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:215:- 1.7.0.1 Remove sqlite3 testing dependency
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:216:- 1.6.9.6 Add Symbol with comparable and <=>
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:217:- 1.6.9.5 Add ActiveRecord testing with sqlite3
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:218:- 1.6.9.4 JRuby install and test successful
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:219:- 1.6.9.3 Array#join add infix, prefix, suffix
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:220:- 1.6.9.2 Improve ri docs
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:221:- 1.6.9.1 Add Array#onto, Enumerable#intersect?
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:222:- 1.6.9.0 Add IO, File, ActiveRecord#seed
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:223:- 1.6.8.9 Add Enumerable#to_h, Array#hash, Hash#each_key!, Hash#each_pair, Hash#each_value!
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:224:- 1.6.8.8 Add Hash#map_pair, Hash#size?, Hash#pivot
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:225:- 1.6.8.7 Add Math
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:226:- 1.6.8.6 Add ActiveRecord SchemaStatements
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:227:- 1.6.8.5 Add Integer#maps, String#ACCENTS
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:228:- 1.6.8.4 Add XML
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:229:- 1.6.8.3 Add ActiveRecord
-gem_subset_37/webget_ramp-1.7.1.8/lib/webget_ramp.rb:230:- 1.6.8.2 Add String#lowcase
-gem_subset_38/port_scanner-0.1.0/lib/port_scanner/cli.rb:18: $> port_scanner scan 192.169.1.2 22
-gem_subset_38/port_scanner-0.1.0/lib/port_scanner/cli.rb:21: $> port_scanner scan 192.169.1.2 12345 # an unknown service?
-gem_subset_39/ghazel-parslet-1.4.0.2/example/ip_address.rb:108: 255.255.255.255
-gem_subset_40/luna_scanner-0.0.3/lib/luna_scanner/device.rb:48:netmask 255.255.252.0
-gem_subset_40/luna_scanner-0.0.3/lib/luna_scanner/device.rb:49:gateway 8.128.3.254
-gem_subset_44/fault_tolerant_router-1.1.0/lib/fault_tolerant_router/generate_config.rb:16: ip: 1.0.0.2
-gem_subset_44/fault_tolerant_router-1.1.0/lib/fault_tolerant_router/generate_config.rb:17: gateway: 1.0.0.1
-gem_subset_44/fault_tolerant_router-1.1.0/lib/fault_tolerant_router/generate_config.rb:25: ip: 2.0.0.2
-gem_subset_44/fault_tolerant_router-1.1.0/lib/fault_tolerant_router/generate_config.rb:26: gateway: 2.0.0.1
-gem_subset_44/fault_tolerant_router-1.1.0/lib/fault_tolerant_router/generate_config.rb:51: - 8.8.8.8
-gem_subset_44/fault_tolerant_router-1.1.0/lib/fault_tolerant_router/generate_config.rb:52: - 8.8.4.4
-gem_subset_44/fault_tolerant_router-1.1.0/lib/fault_tolerant_router/generate_config.rb:53: - 208.67.222.222
-gem_subset_44/fault_tolerant_router-1.1.0/lib/fault_tolerant_router/generate_config.rb:54: - 208.67.220.220
-gem_subset_44/fault_tolerant_router-1.1.0/lib/fault_tolerant_router/generate_config.rb:55: - 4.2.2.2
-gem_subset_44/fault_tolerant_router-1.1.0/lib/fault_tolerant_router/generate_config.rb:56: - 4.2.2.3
-gem_subset_44/przelewy24_payment-0.2.0/lib/przelewy24_payment.rb:35: @@allowed_ips = %w(91.216.191.181 91.216.191.182 91.216.191.183 91.216.191.184 91.216.191.185)
-gem_subset_45/elf-mithril-0.0.5/lib/mithril/elf_enums.rb:5: * $FreeBSD: src/sys/sys/elf32.h,v 1.8.14.1 2005/12/30 22:13:58 marcel Exp $
-gem_subset_45/elf-mithril-0.0.5/lib/mithril/elf_enums.rb:6: * $FreeBSD: src/sys/sys/elf64.h,v 1.10.14.1 2005/12/30 22:13:58 marcel Exp $
-gem_subset_45/elf-mithril-0.0.5/lib/mithril/elf_enums.rb:7: * $FreeBSD: src/sys/sys/elf_common.h,v 1.15.8.1 2005/12/30 22:13:58 marcel Exp $
-gem_subset_45/elf-mithril-0.0.5/lib/mithril/elf_enums.rb:10: * $FreeBSD: src/sys/arm/include/elf.h,v 1.5.2.1 2006/06/30 21:42:52 cognet Exp $
-gem_subset_46/cucumber-chef-3.0.8/chef_repo/cookbooks/cucumber-chef/recipes/lxc.rb:72:address 192.168.255.254
-gem_subset_46/cucumber-chef-3.0.8/chef_repo/cookbooks/cucumber-chef/recipes/lxc.rb:73:netmask 255.255.0.0
-gem_subset_46/graphael-on-rails-0.5.1/vendor/bundle/gems/actionpack-3.2.11/lib/action_dispatch/middleware/remote_ip.rb:11: 172\.(1[6-9]|2[0-9]|3[0-1]) | # private IP in the range 172.16.0.0 .. 172.31.255.255
-gem_subset_46/pftg-jruby-openssl-0.5.3/lib/openssl/buffering.rb:14: $Id: buffering.rb,v 1.5.2.4 2005/09/04 22:03:24 gotoyuzo Exp $
-gem_subset_46/pftg-jruby-openssl-0.5.3/lib/openssl/cipher.rb:14: $Id: cipher.rb,v 1.1.2.2 2006/06/20 11:18:15 gotoyuzo Exp $
-gem_subset_46/pftg-jruby-openssl-0.5.3/lib/openssl/digest.rb:14: $Id: digest.rb,v 1.1.2.2 2006/06/20 11:18:15 gotoyuzo Exp $
-gem_subset_46/pftg-jruby-openssl-0.5.3/lib/openssl/ssl.rb:14: $Id: ssl.rb,v 1.5.2.6 2006/05/23 18:14:05 gotoyuzo Exp $
-gem_subset_46/pftg-jruby-openssl-0.5.3/lib/openssl/x509.rb:14: $Id: x509.rb,v 1.4.2.2 2004/12/19 08:28:33 gotoyuzo Exp $
-gem_subset_47/blackwinter-ruby-nuggets-0.6.1/lib/nuggets/util/dotted_decimal.rb:75: a = %w[77.47.161.3 196.101.53.1 77.47.161.11]
-gem_subset_47/ruby-netcdf-0.7.1.1/extconf.rb:45: ncversion.sub!(/^([^\.]+\.[^\.]+\.[^\.]+).+$/,'\1') # e.g. 4.2.1.1 -> 4.2.1
-gem_subset_51/naked-chef-0.9.15.3/lib/chef/knife/terremark_server_create.rb:93:echo nameserver 208.67.222.222 > /etc/resolv.conf
-gem_subset_51/naked-chef-0.9.15.3/lib/chef/knife/terremark_server_create.rb:94:echo nameserver 208.67.220.220 >> /etc/resolv.conf
-gem_subset_52/fc-webicons-0.0.4/vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:11: 172\.(1[6-9]|2[0-9]|3[0-1]) | # private IP in the range 172.16.0.0 .. 172.31.255.255
-gem_subset_54/rails_apps_composer-3.1.7/recipes/extras.rb:45: raise "Please update rvm gem to 1.11.3.5 or newer"
-gem_subset_56/iqeo-hostspec-0.1.1/lib/iqeo/hostspec/runner.rb:82: io.puts " address : 1.0.0.1 => 1.0.0.1"
-gem_subset_56/iqeo-hostspec-0.1.1/lib/iqeo/hostspec/runner.rb:83: io.puts " address w/mask : 2.0.0.1/24 => 2.0.0.0 2.0.0.1 ... 2.0.0.254 2.0.0.255"
-gem_subset_56/iqeo-hostspec-0.1.1/lib/iqeo/hostspec/runner.rb:84: io.puts " address w/values : 3.0.0.10,20,30 => 3.0.0.10 3.0.0.20 3.0.0.30"
-gem_subset_56/iqeo-hostspec-0.1.1/lib/iqeo/hostspec/runner.rb:85: io.puts " address w/ranges : 4.0.0.40-50 => 4.0.0.40 4.0.0.41 ... 4.0.0.49 4.0.0.50"
-gem_subset_56/iqeo-hostspec-0.1.1/lib/iqeo/hostspec/runner.rb:86: io.puts " address w/combo : 5.0.0.2,4-6,8 => 5.0.0.2 5.0.0.4 5.0.0.5 5.0.0.6 5.0.0.8"
-gem_subset_56/iqeo-hostspec-0.1.1/lib/iqeo/hostspec/runner.rb:87: io.puts " multiple octets : 6.1-2,3.4-5.6 => 6.1.4.6 6.1.5.6 6.2.4.6 6.2.5.6 6.3.4.6 6.3.5.6"
-gem_subset_58/openstudio-standards-0.1.0/lib/openstudio-standards/standards/Standards.AirLoopHVAC.rb:894: OpenStudio::logFree(OpenStudio::Info, 'openstudio.standards.AirLoopHVAC', "For #{self.name}: non-integrated economizer per 6.5.1.3 exception a, DX VAV system.")
-gem_subset_58/openstudio-standards-0.1.0/lib/openstudio-standards/standards/Standards.AirLoopHVAC.rb:898: OpenStudio::logFree(OpenStudio::Info, 'openstudio.standards.AirLoopHVAC', "For #{self.name}: non-integrated economizer per 6.5.1.3 exception b, DX system less than #{minimum_capacity_btu_per_hr}Btu/hr.")
-gem_subset_58/openstudio-standards-0.1.0/lib/openstudio-standards/standards/Standards.AirLoopHVAC.rb:917: OpenStudio::logFree(OpenStudio::Info, 'openstudio.standards.AirLoopHVAC', "For #{self.name}: non-integrated economizer per 6.5.1.3 exception c, climate zone #{climate_zone}.")
-gem_subset_58/openstudio-standards-0.1.0/lib/openstudio-standards/standards/Standards.AirLoopHVAC.rb:2146: OpenStudio::logFree(OpenStudio::Info, 'openstudio.standards.AirLoopHVAC', "For #{self.name}: Supply air temperature reset is not required per 6.5.3.4 Exception 1, the system is located in climate zone #{climate_zone}.")
-gem_subset_58/openstudio-standards-0.1.0/lib/openstudio-standards/standards/Standards.PlantLoop.rb:325: OpenStudio::logFree(OpenStudio::Info, 'openstudio.standards.PlantLoop', "For #{self.name}: supply water temperature reset not required for variable flow systems per 6.5.4.3 Exception b.")
-gem_subset_58/openstudio-standards-0.1.0/lib/openstudio-standards/standards/Standards.Space.rb:1293: OpenStudio::logFree(OpenStudio::Info, "openstudio.model.Space", "For #{vintage} #{self.name}, primary sidelighting control not required because sidelighted effective aperture < 0.1 per 9.4.1.4 Exception b.")
-gem_subset_58/openstudio-standards-0.1.0/lib/openstudio-standards/standards/Standards.Space.rb:1322: OpenStudio::logFree(OpenStudio::Info, "openstudio.model.Space", "For #{vintage} #{self.name}, toplighting control not required because skylight effective aperture < 0.006 per 9.4.1.5 Exception b.")
-gem_subset_59/ladle-1.0.1/lib/ladle/server.rb:374: %r{attributeType w/ OID 2.5.4.16 not registered},
-gem_subset_59/myaxes-0.1.2/lib/myaxes/options.rb:20: opt.separator "shell> myaxes -g web -a 192.168.0.101 -u web301 -p qwerty"
-gem_subset_60/blackwinter-ipaddress-0.8.0.2/lib/ipaddress/ipv4.rb:26: 16 => /\A10./, # Class B, from 128.0.0.0 to 191.255.255.255
-gem_subset_60/blackwinter-ipaddress-0.8.0.2/lib/ipaddress/ipv4.rb:27: 24 => /\A110/ # Class C, D and E, from 192.0.0.0 to 255.255.255.254
-gem_subset_61/devise_sociable-0.1.0/vendor/bundle/gems/actionpack-3.2.11/lib/action_dispatch/middleware/remote_ip.rb:11: 172\.(1[6-9]|2[0-9]|3[0-1]) | # private IP in the range 172.16.0.0 .. 172.31.255.255
-gem_subset_62/ansible4ozw-0.0.7/lib/ansible/knx/dpt/dpt3.rb:82: 2.6.3.5 Behavior
-gem_subset_62/github-pages-health-check-1.1.1/lib/github-pages-health-check/domain.rb:8: 207.97.227.245
-gem_subset_62/github-pages-health-check-1.1.1/lib/github-pages-health-check/domain.rb:9: 204.232.175.78
-gem_subset_62/github-pages-health-check-1.1.1/lib/github-pages-health-check/domain.rb:10: 199.27.73.133
-gem_subset_62/github-pages-health-check-1.1.1/lib/github-pages-health-check/domain.rb:14: 192.30.252.153
-gem_subset_62/github-pages-health-check-1.1.1/lib/github-pages-health-check/domain.rb:15: 192.30.252.154
-gem_subset_62/ipaddress-0.8.3/lib/ipaddress/ipv4.rb:31: /^10./ => 16, # Class B, from 128.0.0.0 to 191.255.255.255
-gem_subset_62/ipaddress-0.8.3/lib/ipaddress/ipv4.rb:32: /^110/ => 24 # Class C, D and E, from 192.0.0.0 to 255.255.255.254
-gem_subset_62/JRuby-OpenSSL-0.1/lib/openssl/buffering.rb:14: $Id: buffering.rb,v 1.5.2.4 2005/09/04 22:03:24 gotoyuzo Exp $
-gem_subset_62/JRuby-OpenSSL-0.1/lib/openssl/cipher.rb:14: $Id: cipher.rb,v 1.1.2.2 2006/06/20 11:18:15 gotoyuzo Exp $
-gem_subset_62/JRuby-OpenSSL-0.1/lib/openssl/digest.rb:14: $Id: digest.rb,v 1.1.2.2 2006/06/20 11:18:15 gotoyuzo Exp $
-gem_subset_62/JRuby-OpenSSL-0.1/lib/openssl/ssl.rb:14: $Id: ssl.rb,v 1.5.2.6 2006/05/23 18:14:05 gotoyuzo Exp $
-gem_subset_62/JRuby-OpenSSL-0.1/lib/openssl/x509.rb:14: $Id: x509.rb,v 1.4.2.2 2004/12/19 08:28:33 gotoyuzo Exp $
-gem_subset_64/knife-infoblox-0.1.5/lib/chef/knife/infoblox_host.rb:30: description: 'suggest a starting IP. e.g. If you expect hostname1 to have 10.10.10.120 allocated'
-gem_subset_64/soleranetworks-0.1.6/lib/soleranetworks.rb:31: :host => '', # ie: 192.168.20.20
-gem_subset_65/fog-rackspace-0.1.1/lib/fog/rackspace/examples/compute_v2/create_network.rb:40:#create private network called my_private_net with an ip range between 192.168.0.1 - 192.168.0.255 (Note this will accept IPv6 CIDRs as well)
-gem_subset_67/swift-pyrite-0.1.1/vendor/bundle/ruby/2.0.0/gems/parslet-1.7.1/example/ip_address.rb:108: 255.255.255.255
-gem_subset_68/kitchen-hyperv-0.1.10/lib/kitchen/driver/powershell.rb:131: Set-VMNetworkConfiguration -ipaddress "#{config[:ip_address]}" -subnet 255.255.255.0 |
-gem_subset_69/rails-base-0.0.5/lib/template.rb:2879: raise "Please update rvm gem to 1.11.3.5 or newer"
-gem_subset_70/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:161:attributetype ( 2.5.4.35 NAME 'userPassword' DESC 'RFC2256/2307: password of user' EQUALITY octetStringMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.40{128} )
-gem_subset_70/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:162:attributetype ( 2.5.4.3 NAME ( 'cn' 'commonName' ) DESC 'RFC2256: common name(s) for which the entity is known by' SUP name )
-gem_subset_70/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:163:attributetype ( 2.5.4.41 NAME 'name' DESC 'RFC2256: common supertype of name attributes' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{32768} )
-gem_subset_70/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:164:attributetype ( 2.5.4.49 NAME 'distinguishedName' DESC 'RFC2256: common supertype of DN attributes' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 )
-gem_subset_70/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:166:attributetype ( 2.5.4.1 NAME ( 'aliasedObjectName' 'aliasedEntryName' ) DESC 'RFC2256: name of aliased object' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 SINGLE-VALUE )
-gem_subset_70/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:168:attributetype ( 2.5.21.8 NAME 'matchingRuleUse' DESC 'RFC2252: matching rule uses' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.31 USAGE directoryOperation )
-gem_subset_70/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:169:attributetype ( 2.5.21.6 NAME 'objectClasses' DESC 'RFC2252: object classes' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.37 USAGE directoryOperation )
-gem_subset_70/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:170:attributetype ( 2.5.21.5 NAME 'attributeTypes' DESC 'RFC2252: attribute types' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.3 USAGE directoryOperation )
-gem_subset_70/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:171:attributetype ( 2.5.21.4 NAME 'matchingRules' DESC 'RFC2252: matching rules' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.30 USAGE directoryOperation )
-gem_subset_70/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:181:attributetype ( 2.5.18.10 NAME 'subschemaSubentry' DESC 'RFC2252: name of controlling subschema entry' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
-gem_subset_70/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:182:attributetype ( 2.5.18.9 NAME 'hasSubordinates' DESC 'X.501: entry has children' EQUALITY booleanMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.7 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
-gem_subset_70/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:183:attributetype ( 2.5.18.4 NAME 'modifiersName' DESC 'RFC2252: name of last modifier' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
-gem_subset_70/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:184:attributetype ( 2.5.18.3 NAME 'creatorsName' DESC 'RFC2252: name of creator' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
-gem_subset_70/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:185:attributetype ( 2.5.18.2 NAME 'modifyTimestamp' DESC 'RFC2252: time which object was last modified' EQUALITY generalizedTimeMatch ORDERING generalizedTimeOrderingMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.24 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
-gem_subset_70/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:186:attributetype ( 2.5.18.1 NAME 'createTimestamp' DESC 'RFC2252: time which object was created' EQUALITY generalizedTimeMatch ORDERING generalizedTimeOrderingMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.24 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
-gem_subset_70/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:187:attributetype ( 2.5.21.9 NAME 'structuralObjectClass' DESC 'X.500(93): structural object class of entry' EQUALITY objectIdentifierMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.38 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
-gem_subset_70/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:188:attributetype ( 2.5.4.0 NAME 'objectClass' DESC 'RFC2256: object classes of the entity' EQUALITY objectIdentifierMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.38 )
-gem_subset_70/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:190:attributetype ( 2.5.21.1 NAME 'dITStructureRules' EQUALITY integerFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.17 USAGE directoryOperation )
-gem_subset_70/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:191:attributetype ( 2.5.21.7 NAME 'nameForms' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.35 USAGE directoryOperation )
-gem_subset_70/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:192:attributetype ( 2.5.21.2 NAME 'dITContentRules' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.16 USAGE directoryOperation )
-gem_subset_70/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:194:objectclass ( 2.5.20.1 NAME 'subschema' DESC 'RFC2252: controlling subschema (sub)entry' AUXILIARY MAY ( dITStructureRules $ nameForms $ ditContentRules $ objectClasses $ attributeTypes $ matchingRules $ matchingRuleUse ) )
-gem_subset_70/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:196:#objectClass ( 2.5.17.0 NAME 'subentry' SUP top STRUCTURAL MUST ( cn $ subtreeSpecification ) )
-gem_subset_70/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:199:objectClass ( 2.5.6.1 NAME 'alias' DESC 'RFC2256: an alias' SUP top STRUCTURAL MUST aliasedObjectName )
-gem_subset_70/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:201:objectClass ( 2.5.6.0 NAME 'top' DESC 'top of the superclass chain' ABSTRACT MUST objectClass )
-gem_subset_70/nitos_testbed_rc-2.0.4/lib/nitos_testbed_rc/frisbee.rb:24: property :multicast_interface #multicast interface, example 10.0.1.12 for node12 (-i arguement)
-gem_subset_70/nitos_testbed_rc-2.0.4/lib/nitos_testbed_rc/frisbee.rb:25: property :multicast_address, :default => @fconf[:mcAddress] #multicast address, example 224.0.0.1 (-m arguement)
-gem_subset_70/nitos_testbed_rc-2.0.4/lib/nitos_testbed_rc/frisbeed.rb:22: property :multicast_interface, :default => @fconf[:multicastIF] #multicast interface, example 10.0.0.200 (-i arguement)
-gem_subset_70/nitos_testbed_rc-2.0.4/lib/nitos_testbed_rc/frisbeed.rb:23: property :multicast_address, :default => @fconf[:mcAddress] #multicast address, example 224.0.0.1 (-m arguement)
-gem_subset_70/railscast-assets-0.0.2/vendor/bundle/gems/actionpack-3.2.11/lib/action_dispatch/middleware/remote_ip.rb:11: 172\.(1[6-9]|2[0-9]|3[0-1]) | # private IP in the range 172.16.0.0 .. 172.31.255.255
-gem_subset_70/railscast-assets-0.0.2/vendor/bundle/gems/backbone-forms-on-rails-0.10.0/vendor/bundle/gems/actionpack-3.2.11/lib/action_dispatch/middleware/remote_ip.rb:11: 172\.(1[6-9]|2[0-9]|3[0-1]) | # private IP in the range 172.16.0.0 .. 172.31.255.255
-gem_subset_71/metabridge-0.1.3/lib/meta_bridge/cli.rb:18: Device found: 10.10.1.50 00:27:22:d4:d5:da\x5
-gem_subset_71/metabridge-0.1.3/lib/meta_bridge/cli.rb:19: Device found: 10.10.1.79 ac:22:0b:45:99:49\x5
-gem_subset_71/metabridge-0.1.3/lib/meta_bridge/cli.rb:20: Device found: 10.10.1.82 ac:22:0b:67:94:91\x5
-gem_subset_71/metabridge-0.1.3/lib/meta_bridge/cli.rb:28: device_str += set_color(device.ip.ljust(16), :yellow) # 255.255.255.255
-gem_subset_73/open-dock-0.1.18/lib/open-dock/providers/vagrant.rb:50: say "\nIp: Every IP in the 192.168.0.0 range"
-gem_subset_78/chef-vpc-toolkit-2.8.2/lib/chef-vpc-toolkit/vpn_openvpn.rb:19:/sbin/route add -net #{@group.vpn_network} netmask 255.255.128.0 gw #{@group.vpn_network.chomp("0")+"1"}
-gem_subset_78/swipe-rails-0.0.5/vendor/bundle/gems/actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:11: 172\.(1[6-9]|2[0-9]|3[0-1]) | # private IP in the range 172.16.0.0 .. 172.31.255.255
-gem_subset_79/activejob-lock-0.0.2/rails/actionpack/lib/action_dispatch/middleware/remote_ip.rb:38: "172.16.0.0/12", # private IPv4 range 172.16.0.0 .. 172.31.255.255
-gem_subset_81/pvcglue-0.1.35/lib/pvcglue/local.rb:55: result = `ip route get 8.8.8.8 2>&1 | awk '{print $NF; exit}'`.strip # Ubuntu
-gem_subset_81/pvcglue-0.1.35/lib/pvcglue/local.rb:219: inet 10.0.2.15/24 brd 10.0.2.255 scope global eth0
-gem_subset_81/pvcglue-0.1.35/lib/pvcglue/local.rb:225: inet 10.10.10.208/24 brd 10.10.10.255 scope global eth1
-gem_subset_81/pvcglue-0.1.35/lib/pvcglue/local.rb:231: inet 172.28.128.3/24 brd 172.28.128.255 scope global eth2
-gem_subset_86/construqt-ipaddress-0.8.4/lib/ipaddress/ipv4.rb:31: /^10./ => 16, # Class B, from 128.0.0.0 to 191.255.255.255
-gem_subset_86/construqt-ipaddress-0.8.4/lib/ipaddress/ipv4.rb:32: /^110/ => 24 # Class C, D and E, from 192.0.0.0 to 255.255.255.254
-gem_subset_86/moneybookers-0.0.1/lib/moneybookers.rb:12: SERVICE_IPS = %w{213.129.75.201 213.129.75.203 91.208.28.7 91.208.28.8 91.208.28.9 91.208.28.4 91.208.28.5 91.208.28.6
-gem_subset_86/moneybookers-0.0.1/lib/moneybookers.rb:13: 193.105.47.4 193.105.47.5 193.105.47.6 193.105.47.7 193.105.47.8 193.105.47.9}
-gem_subset_87/fog-maestrodev-1.20.0.20140305101839/lib/fog/rackspace/examples/compute_v2/create_network.rb:40:#create private network called my_private_net with an ip range between 192.168.0.1 - 192.168.0.255 (Note this will accept IPv6 CIDRs as well)
-gem_subset_88/codesake-dawn-1.2.99/lib/codesake/dawn/kb/cve_2012_1241.rb:9: message="GRScript18.dll before 1.2.2.0 in ActiveScriptRuby (ASR) before 1.8.7 does not properly restrict interaction with an Internet Explorer ActiveX environment, which allows remote attackers to execute arbitrary Ruby code via a crafted HTML document."
-gem_subset_88/codesake-dawn-1.2.99/lib/codesake/dawn/kb/cve_2013_4478.rb:9: message = "Sup before 0.13.2.1 and 0.14.x before 0.14.1.1 allows remote attackers to execute arbitrary commands via shell metacharacters in the filename of an email attachment."
-gem_subset_88/codesake-dawn-1.2.99/lib/codesake/dawn/kb/cve_2013_4479.rb:9: message = "lib/sup/message_chunks.rb in Sup before 0.13.2.1 and 0.14.x before 0.14.1.1 allows remote attackers to execute arbitrary commands via shell metacharacters in the content_type of an email attachment."
-gem_subset_88/codesake-dawn-1.2.99/lib/codesake/dawn/kb/cve_2013_7086.rb:9: message = "The message function in lib/webbynode/notify.rb in the Webbynode gem 1.0.5.3 and earlier for Ruby allows context-dependent attackers to execute arbitrary commands via shell metacharacters in a growlnotify message."
-gem_subset_88/snmpdumper-0.0.4/lib/snmpwalk_reader.rb:73: Example: .1.3.6.1.2.1.1.1.0 = STRING: Linux host.local 2.6.17.6 #1 SMP Thu Mar 8 15:32:13 CET 2007 i686\n
-gem_subset_88/tunneler-0.0.1/lib/tunneler/cli.rb:100: "Examples: tunneler -b 120.1.2.3 -d 121.2.3.4 ssh\n" +
-gem_subset_88/tunneler-0.0.1/lib/tunneler/cli.rb:101: " tunneler -b 120.1.2.3 -d 121.2.3.4 scp local_file destination_file\n" +
-gem_subset_88/tunneler-0.0.1/lib/tunneler/cli.rb:102: " tunneler -b 120.1.2.3 -d 121.2.3.4 execute whoami\n"
-gem_subset_90/mbailey-chef-0.9.12.2/lib/chef/knife/terremark_server_create.rb:93:echo nameserver 208.67.222.222 > /etc/resolv.conf
-gem_subset_90/mbailey-chef-0.9.12.2/lib/chef/knife/terremark_server_create.rb:94:echo nameserver 208.67.220.220 >> /etc/resolv.conf
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:207:- 1.7.1.8 Add Enumerable#map_with_index
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:208:- 1.7.1.6 Add ActiveRecord::SaveExtensions#save_false_then_reload!
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:209:- 1.7.1.3 Add XML#strip_xxx
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:210:- 1.7.1.2 Update gems: Gemcutter, Ruby 1.9.1, JRuby sqlite3
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:211:- 1.7.1.0 Add XML attributes methods #
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:212:- 1.7.0.9 Add Enumerable #hash_by, #index_by
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:213:- 1.7.0.7 Add Array#to_tsv, String#split_tsv, improve Array#to_csv
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:214:- 1.7.0.6 Add Array#shuffle, Array#shuffle!
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:215:- 1.7.0.5 Add Array#shifted, Array#rest, Array#car, Array#cdr
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:216:- 1.7.0.4 Upgrade IO#readrows and #readrow to use options
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:217:- 1.7.0.2 Add Array#to_tdf
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:218:- 1.7.0.1 Remove sqlite3 testing dependency
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:219:- 1.6.9.6 Add Symbol with comparable and <=>
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:220:- 1.6.9.5 Add ActiveRecord testing with sqlite3
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:221:- 1.6.9.4 JRuby install and test successful
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:222:- 1.6.9.3 Array#join add infix, prefix, suffix
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:223:- 1.6.9.2 Improve ri docs
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:224:- 1.6.9.1 Add Array#onto, Enumerable#intersect?
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:225:- 1.6.9.0 Add IO, File, ActiveRecord#seed
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:226:- 1.6.8.9 Add Enumerable#to_h, Array#hash, Hash#each_key!, Hash#each_pair, Hash#each_value!
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:227:- 1.6.8.8 Add Hash#map_pair, Hash#size?, Hash#pivot
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:228:- 1.6.8.7 Add Math
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:229:- 1.6.8.6 Add ActiveRecord SchemaStatements
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:230:- 1.6.8.5 Add Integer#maps, String#ACCENTS
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:231:- 1.6.8.4 Add XML
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:232:- 1.6.8.3 Add ActiveRecord
-gem_subset_90/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:233:- 1.6.8.2 Add String#lowcase
-gem_subset_91/weary-1.1.3/lib/weary.rb:6: "Firefox 1.5.0.12 - Mac" => "Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.12) Gecko/20070508 Firefox/1.5.0.12",
-gem_subset_91/weary-1.1.3/lib/weary.rb:7: "Firefox 1.5.0.12 - Windows" => "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.12) Gecko/20070508 Firefox/1.5.0.12",
-gem_subset_91/weary-1.1.3/lib/weary.rb:8: "Firefox 2.0.0.12 - Mac" => "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.12) Gecko/20080201 Firefox/2.0.0.12",
-gem_subset_91/weary-1.1.3/lib/weary.rb:9: "Firefox 2.0.0.12 - Windows" => "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.12) Gecko/20080201 Firefox/2.0.0.12",
-gem_subset_94/x-real-ip-0.2.1/lib/x-real-ip.rb:16: "172.16.0.0/12", # private IPv4 range 172.16.0.0 .. 172.31.255.255
-gem_subset_95/jruby-jruby-openssl-0.5.0.4/lib/openssl/buffering.rb:14: $Id: buffering.rb,v 1.5.2.4 2005/09/04 22:03:24 gotoyuzo Exp $
-gem_subset_95/jruby-jruby-openssl-0.5.0.4/lib/openssl/cipher.rb:14: $Id: cipher.rb,v 1.1.2.2 2006/06/20 11:18:15 gotoyuzo Exp $
-gem_subset_95/jruby-jruby-openssl-0.5.0.4/lib/openssl/digest.rb:14: $Id: digest.rb,v 1.1.2.2 2006/06/20 11:18:15 gotoyuzo Exp $
-gem_subset_95/jruby-jruby-openssl-0.5.0.4/lib/openssl/ssl.rb:14: $Id: ssl.rb,v 1.5.2.6 2006/05/23 18:14:05 gotoyuzo Exp $
-gem_subset_95/jruby-jruby-openssl-0.5.0.4/lib/openssl/x509.rb:14: $Id: x509.rb,v 1.4.2.2 2004/12/19 08:28:33 gotoyuzo Exp $
-gem_subset_96/redmint_composer-2.3/recipes/extras.rb:45: raise "Please update rvm gem to 1.11.3.5 or newer"
-gem_subset_99/angular-rails4-templates-0.4.1/vendor/ruby/2.1.0/gems/actionpack-4.1.13/lib/action_dispatch/middleware/remote_ip.rb:36: ^172\.(1[6-9]|2[0-9]|3[0-1])\.| # private IPv4 range 172.16.0.0 .. 172.31.255.255
-gem_subset_99/angular-rails4-templates-0.4.1/vendor/ruby/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/remote_ip.rb:38: "172.16.0.0/12", # private IPv4 range 172.16.0.0 .. 172.31.255.255
-gem_subset_99/cloud-toaster-1.1.6/chef/cookbooks/lxc/recipes/setup_host.rb:146: /sbin/ifconfig #{node["network"]["host"]["bridge_device"]} #{node["network"]["gateway"]} netmask 255.255.0.0 promisc up
+gems/subset_01/JRuby-OpenSSL-0.1/lib/openssl/buffering.rb:14: $Id: buffering.rb,v 1.5.2.4 2005/09/04 22:03:24 gotoyuzo Exp $
+gems/subset_01/JRuby-OpenSSL-0.1/lib/openssl/cipher.rb:14: $Id: cipher.rb,v 1.1.2.2 2006/06/20 11:18:15 gotoyuzo Exp $
+gems/subset_01/JRuby-OpenSSL-0.1/lib/openssl/digest.rb:14: $Id: digest.rb,v 1.1.2.2 2006/06/20 11:18:15 gotoyuzo Exp $
+gems/subset_01/JRuby-OpenSSL-0.1/lib/openssl/ssl.rb:14: $Id: ssl.rb,v 1.5.2.6 2006/05/23 18:14:05 gotoyuzo Exp $
+gems/subset_01/JRuby-OpenSSL-0.1/lib/openssl/x509.rb:14: $Id: x509.rb,v 1.4.2.2 2004/12/19 08:28:33 gotoyuzo Exp $
+gems/subset_03/CloudyScripts-2.14.64/lib/audit/lib/ssh_utils.rb:204: remote_tun_conf_cmd = "ifconfig tun#{remote_tun_num} #{local_ip} #{remote_ip} netmask 255.255.255.0 2>/dev/null 1>/dev/null"
+gems/subset_03/CloudyScripts-2.14.64/lib/audit/lib/ssh_utils.rb:208: local_tun_conf_cmd = "ifconfig tun#{local_tun_num} #{remote_ip} #{local_ip} netmask 255.255.255.0 2>/dev/null 1>/dev/null"
+gems/subset_03/fog-rackspace-0.1.1/lib/fog/rackspace/examples/compute_v2/create_network.rb:40:#create private network called my_private_net with an ip range between 192.168.0.1 - 192.168.0.255 (Note this will accept IPv6 CIDRs as well)
+gems/subset_04/cucumber-chef-3.0.8/chef_repo/cookbooks/cucumber-chef/recipes/lxc.rb:72:address 192.168.255.254
+gems/subset_04/cucumber-chef-3.0.8/chef_repo/cookbooks/cucumber-chef/recipes/lxc.rb:73:netmask 255.255.0.0
+gems/subset_04/toolmantim-zeroconf-0.0.2/samples/v1demo.rb:55: coolweb.local:80 at IP 192.168.0.12
+gems/subset_04/toolmantim-zeroconf-0.0.2/samples/v1demo.rb:60: coolweb.local:80 at IP 192.168.0.12
+gems/subset_04/toolmantim-zeroconf-0.0.2/samples/v1demo.rb:65: emb000102030405.local:23 at IP 192.168.0.93
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:204:- 1.7.1.8 Add Enumerable#map_with_index
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:205:- 1.7.1.6 Add ActiveRecord::SaveExtensions#save_false_then_reload!
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:206:- 1.7.1.3 Add XML#strip_xxx
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:207:- 1.7.1.2 Update gems: Gemcutter, Ruby 1.9.1, JRuby sqlite3
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:208:- 1.7.1.0 Add XML attributes methods #
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:209:- 1.7.0.9 Add Enumerable #hash_by, #index_by
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:210:- 1.7.0.7 Add Array#to_tsv, String#split_tsv, improve Array#to_csv
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:211:- 1.7.0.6 Add Array#shuffle, Array#shuffle!
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:212:- 1.7.0.5 Add Array#shifted, Array#rest, Array#car, Array#cdr
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:213:- 1.7.0.4 Upgrade IO#readrows and #readrow to use options
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:214:- 1.7.0.2 Add Array#to_tdf
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:215:- 1.7.0.1 Remove sqlite3 testing dependency
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:216:- 1.6.9.6 Add Symbol with comparable and <=>
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:217:- 1.6.9.5 Add ActiveRecord testing with sqlite3
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:218:- 1.6.9.4 JRuby install and test successful
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:219:- 1.6.9.3 Array#join add infix, prefix, suffix
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:220:- 1.6.9.2 Improve ri docs
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:221:- 1.6.9.1 Add Array#onto, Enumerable#intersect?
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:222:- 1.6.9.0 Add IO, File, ActiveRecord#seed
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:223:- 1.6.8.9 Add Enumerable#to_h, Array#hash, Hash#each_key!, Hash#each_pair, Hash#each_value!
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:224:- 1.6.8.8 Add Hash#map_pair, Hash#size?, Hash#pivot
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:225:- 1.6.8.7 Add Math
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:226:- 1.6.8.6 Add ActiveRecord SchemaStatements
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:227:- 1.6.8.5 Add Integer#maps, String#ACCENTS
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:228:- 1.6.8.4 Add XML
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:229:- 1.6.8.3 Add ActiveRecord
+gems/subset_04/webget_ramp-1.7.1.8/lib/webget_ramp.rb:230:- 1.6.8.2 Add String#lowcase
+gems/subset_06/vagrant-adbinfo-0.1.0/lib/command.rb:29: command = "ip route get 8.8.8.8 | awk 'NR==1 {print $NF}'"
+gems/subset_07/soleranetworks-0.1.6/lib/soleranetworks.rb:31: :host => '', # ie: 192.168.20.20
+gems/subset_08/plum-0.2.10/lib/plum/rack/session.rb:218: rbase[key] = v_.gsub("\n", "; ") # RFC 7540 8.1.2.5
+gems/subset_09/bgp4r-0.0.19/examples/ebgp-vyatta-ipv4-ipv6.rb:113:*> 13.11.0.0/26 22.22.22.254 0 0 200 i
+gems/subset_09/bgp4r-0.0.19/examples/ebgp-vyatta-ipv4-ipv6.rb:114:*> 13.11.0.64/26 22.22.22.254 0 0 200 i
+gems/subset_09/bgp4r-0.0.19/examples/ebgp-vyatta-ipv4-ipv6.rb:115:*> 13.11.0.128/26 22.22.22.254 0 0 200 i
+gems/subset_09/bgp4r-0.0.19/examples/ebgp-vyatta-ipv4-ipv6.rb:116:*> 13.11.0.192/26 22.22.22.254 0 0 200 i
+gems/subset_09/bgp4r-0.0.19/examples/ebgp-vyatta-ipv4-ipv6.rb:117:*> 13.11.1.0/26 22.22.22.254 0 0 200 i
+gems/subset_09/bgp4r-0.0.19/examples/ebgp-vyatta-ipv4-ipv6.rb:118:*> 13.11.1.64/26 22.22.22.254 0 0 200 i
+gems/subset_09/bgp4r-0.0.19/examples/ebgp-vyatta-ipv4-ipv6.rb:119:*> 13.11.1.128/26 22.22.22.254 0 0 200 i
+gems/subset_09/bgp4r-0.0.19/examples/ebgp-vyatta-ipv4-ipv6.rb:120:*> 13.11.1.192/26 22.22.22.254 0 0 200 i
+gems/subset_09/bgp4r-0.0.19/examples/ebgp-vyatta-ipv4-ipv6.rb:121:*> 13.11.2.0/26 22.22.22.254 0 0 200 i
+gems/subset_09/bgp4r-0.0.19/examples/ebgp-vyatta-ipv4-ipv6.rb:122:*> 13.11.2.64/26 22.22.22.254 0 0 200 i
+gems/subset_09/bgp4r-0.0.19/examples/ebgp-vyatta-ipv4-ipv6.rb:123:*> 13.11.2.128/26 22.22.22.254 0 0 200 i
+gems/subset_09/bgp4r-0.0.19/examples/ebgp-vyatta-ipv4-ipv6.rb:124:*> 13.11.2.192/26 22.22.22.254 0 0 200 i
+gems/subset_09/bgp4r-0.0.19/examples/ebgp-vyatta-ipv4-ipv6.rb:125:*> 13.11.3.0/26 22.22.22.254 0 0 200 i
+gems/subset_09/bgp4r-0.0.19/examples/ebgp-vyatta-ipv4-ipv6.rb:126:*> 13.11.3.64/26 22.22.22.254 0 0 200 i
+gems/subset_09/bgp4r-0.0.19/examples/ebgp-vyatta-ipv4-ipv6.rb:127:*> 13.11.3.128/26 22.22.22.254 0 0 200 i
+gems/subset_09/bgp4r-0.0.19/examples/ebgp-vyatta-ipv4-ipv6.rb:128:*> 13.11.3.192/26 22.22.22.254 0 0 200 i
+gems/subset_09/bgp4r-0.0.19/examples/ebgp-vyatta-ipv4-ipv6.rb:129:*> 13.11.4.0/26 22.22.22.254 0 0 200 i
+gems/subset_09/bgp4r-0.0.19/examples/ebgp-vyatta-ipv4-ipv6.rb:130:*> 13.11.4.64/26 22.22.22.254 0 0 200 i
+gems/subset_09/bgp4r-0.0.19/examples/ebgp-vyatta-ipv4-ipv6.rb:131:*> 13.11.4.128/26 22.22.22.254 0 0 200 i
+gems/subset_09/bgp4r-0.0.19/examples/ebgp-vyatta-ipv4-ipv6.rb:132:*> 13.11.4.192/26 22.22.22.254 0 0 200 i
+gems/subset_09/bgp4r-0.0.19/examples/ebgp-vyatta-ipv4-ipv6.rb:133:*> 13.11.5.0/26 22.22.22.254 0 0 200 i
+gems/subset_09/bgp4r-0.0.19/examples/ebgp-vyatta-ipv4-ipv6.rb:134:*> 13.11.5.64/26 22.22.22.254 0 0 200 i
+gems/subset_09/bgp4r-0.0.19/examples/ebgp-vyatta-ipv4-ipv6.rb:187: inet 22.22.22.254 netmask 255.255.255.0 broadcast 22.22.22.255
+gems/subset_09/bgp4r-0.0.19/examples/ebgp-vyatta-ipv4-ipv6.rb:218: neighbor 22.22.22.254 {
+gems/subset_09/bgp4r-0.0.19/examples/ibgp-ios-asn4bytes-addpath.rb:59: bgp router-id 2.2.2.2
+gems/subset_09/bgp4r-0.0.19/examples/ibgp-ios-asn4bytes-addpath.rb:71:BGP table version is 115, local router ID is 2.2.2.2
+gems/subset_09/bgp4r-0.0.19/examples/ibgp-ios-asn4bytes-addpath.rb:123:R11#show ip bgp 13.11.0.64
+gems/subset_09/bgp4r-0.0.19/examples/ibgp-ios-asn4bytes-addpath.rb:145: Version 4, my AS 23456, Holdtime 180s, ID 0.0.0.1
+gems/subset_09/bgp4r-0.0.19/examples/ibgp-ios-asn4bytes-addpath.rb:166: Version 4, my AS 23456, Holdtime 180s, ID 2.2.2.2
+gems/subset_09/bgp4r-0.0.19/examples/ibgp-ios-asn4bytes.rb:61: bgp router-id 2.2.2.2
+gems/subset_09/bgp4r-0.0.19/examples/ibgp-ios-asn4bytes.rb:111: Version 4, my AS 23456, Holdtime 180s, ID 0.0.0.1
+gems/subset_09/bgp4r-0.0.19/examples/ibgp-ios-asn4bytes.rb:128: Version 4, my AS 23456, Holdtime 180s, ID 2.2.2.2
+gems/subset_09/bgp4r-0.0.19/examples/ibgp-vyatta-ipv6.rb:137: neighbor 169.253.253.1 {
+gems/subset_09/bgp4r-0.0.19/examples/ibgp-vyatta-ipv6.rb:145: router-id 1.2.3.4
+gems/subset_09/blackwinter-ruby-nuggets-0.6.1/lib/nuggets/util/dotted_decimal.rb:75: a = %w[77.47.161.3 196.101.53.1 77.47.161.11]
+gems/subset_09/pik-0.2.8/features/support/env.rb:3:"092: IronRuby 0.9.2.0 on .NET 2.0.0.0":
+gems/subset_14/nitos_testbed_rc-2.0.4/lib/nitos_testbed_rc/frisbee.rb:24: property :multicast_interface #multicast interface, example 10.0.1.12 for node12 (-i arguement)
+gems/subset_14/nitos_testbed_rc-2.0.4/lib/nitos_testbed_rc/frisbee.rb:25: property :multicast_address, :default => @fconf[:mcAddress] #multicast address, example 224.0.0.1 (-m arguement)
+gems/subset_14/nitos_testbed_rc-2.0.4/lib/nitos_testbed_rc/frisbeed.rb:22: property :multicast_interface, :default => @fconf[:multicastIF] #multicast interface, example 10.0.0.200 (-i arguement)
+gems/subset_14/nitos_testbed_rc-2.0.4/lib/nitos_testbed_rc/frisbeed.rb:23: property :multicast_address, :default => @fconf[:mcAddress] #multicast address, example 224.0.0.1 (-m arguement)
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:207:- 1.7.1.8 Add Enumerable#map_with_index
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:208:- 1.7.1.6 Add ActiveRecord::SaveExtensions#save_false_then_reload!
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:209:- 1.7.1.3 Add XML#strip_xxx
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:210:- 1.7.1.2 Update gems: Gemcutter, Ruby 1.9.1, JRuby sqlite3
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:211:- 1.7.1.0 Add XML attributes methods #
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:212:- 1.7.0.9 Add Enumerable #hash_by, #index_by
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:213:- 1.7.0.7 Add Array#to_tsv, String#split_tsv, improve Array#to_csv
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:214:- 1.7.0.6 Add Array#shuffle, Array#shuffle!
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:215:- 1.7.0.5 Add Array#shifted, Array#rest, Array#car, Array#cdr
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:216:- 1.7.0.4 Upgrade IO#readrows and #readrow to use options
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:217:- 1.7.0.2 Add Array#to_tdf
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:218:- 1.7.0.1 Remove sqlite3 testing dependency
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:219:- 1.6.9.6 Add Symbol with comparable and <=>
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:220:- 1.6.9.5 Add ActiveRecord testing with sqlite3
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:221:- 1.6.9.4 JRuby install and test successful
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:222:- 1.6.9.3 Array#join add infix, prefix, suffix
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:223:- 1.6.9.2 Improve ri docs
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:224:- 1.6.9.1 Add Array#onto, Enumerable#intersect?
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:225:- 1.6.9.0 Add IO, File, ActiveRecord#seed
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:226:- 1.6.8.9 Add Enumerable#to_h, Array#hash, Hash#each_key!, Hash#each_pair, Hash#each_value!
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:227:- 1.6.8.8 Add Hash#map_pair, Hash#size?, Hash#pivot
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:228:- 1.6.8.7 Add Math
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:229:- 1.6.8.6 Add ActiveRecord SchemaStatements
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:230:- 1.6.8.5 Add Integer#maps, String#ACCENTS
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:231:- 1.6.8.4 Add XML
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:232:- 1.6.8.3 Add ActiveRecord
+gems/subset_14/webget_ruby_ramp-1.8.2/lib/webget_ruby_ramp.rb:233:- 1.6.8.2 Add String#lowcase
+gems/subset_15/app42-0.7.0/lib/app42/base/help.rb:755: | demo_db | Amazon (Oregon) | 0pcmpc64srphrwijmy616uipdjv7t0oi | 172.16.2.167 | RUNNING | admk0ltirejxgh3o | | 27875 | MySQL 5.5.31 | | a66tyn077yhlx2gue0t2nsjplls56g7m | 256 MB | mysqldb |
+gems/subset_15/app42-0.7.0/lib/app42/base/help.rb:1026: | demodb | Amazon | mysqldemo | 10.0.0.52 | RUNNING | j7zz1jsx1bb4eiz1 | 49695 | MySQL 5.5.1 | teh77o4b6kpb22ab6oogfu9lwru9vrlj | 512 MB |
+gems/subset_16/dawnscanner-1.6.2/lib/dawn/kb/cve_2012_1241.rb:8: message="GRScript18.dll before 1.2.2.0 in ActiveScriptRuby (ASR) before 1.8.7 does not properly restrict interaction with an Internet Explorer ActiveX environment, which allows remote attackers to execute arbitrary Ruby code via a crafted HTML document."
+gems/subset_16/dawnscanner-1.6.2/lib/dawn/kb/cve_2013_4478.rb:8: message = "Sup before 0.13.2.1 and 0.14.x before 0.14.1.1 allows remote attackers to execute arbitrary commands via shell metacharacters in the filename of an email attachment."
+gems/subset_16/dawnscanner-1.6.2/lib/dawn/kb/cve_2013_4479.rb:8: message = "lib/sup/message_chunks.rb in Sup before 0.13.2.1 and 0.14.x before 0.14.1.1 allows remote attackers to execute arbitrary commands via shell metacharacters in the content_type of an email attachment."
+gems/subset_16/dawnscanner-1.6.2/lib/dawn/kb/cve_2013_7086.rb:8: message = "The message function in lib/webbynode/notify.rb in the Webbynode gem 1.0.5.3 and earlier for Ruby allows context-dependent attackers to execute arbitrary commands via shell metacharacters in a growlnotify message."
+gems/subset_16/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_1819.rb:12: message="Nokogiri versions before 1.6.6.4 contain a vulnerable version of libxml2 as a C extension. The vulnerability allows for memory consumption denial of service."
+gems/subset_16/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_1819.rb:25: :mitigation=>"Please upgrade nokogiri gem to version 1.6.6.4 or later.",
+gems/subset_16/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_5312.rb:21: :mitigation=>"Please upgrade nokogiri gem to version 1.6.7.1 or later.",
+gems/subset_16/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_7497.rb:22: :mitigation=>"Please upgrade nokogiri gem to version 1.6.7.1 or later.",
+gems/subset_16/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_7498.rb:22: :mitigation=>"Please upgrade nokogiri gem to version 1.6.7.1 or later.",
+gems/subset_16/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_7499.rb:22: :mitigation=>"Please upgrade nokogiri gem to version 1.6.7.1 or later.",
+gems/subset_16/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_7500.rb:22: :mitigation=>"Please upgrade nokogiri gem to version 1.6.7.1 or later.",
+gems/subset_16/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_8241.rb:22: :mitigation=>"Please upgrade nokogiri gem to version 1.6.7.1 or later.",
+gems/subset_16/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_8242.rb:22: :mitigation=>"Please upgrade nokogiri gem to version 1.6.7.1 or later.",
+gems/subset_16/dawnscanner-1.6.2/lib/dawn/kb/cve_2015_8317.rb:22: :mitigation=>"Please upgrade nokogiri gem to version 1.6.7.1 or later.",
+gems/subset_16/dawnscanner-1.6.2/lib/dawn/kb/cve_2016_2097.rb:25: :mitigation=>"Please upgrade actionview gem to version 3.2.22.2, 4.1.14.2 or later.",
+gems/subset_22/blackwinter-ipaddress-0.8.0.2/lib/ipaddress/ipv4.rb:26: 16 => /\A10./, # Class B, from 128.0.0.0 to 191.255.255.255
+gems/subset_22/blackwinter-ipaddress-0.8.0.2/lib/ipaddress/ipv4.rb:27: 24 => /\A110/ # Class C, D and E, from 192.0.0.0 to 255.255.255.254
+gems/subset_24/ganddyn-0.0.2/lib/ganddyn/client.rb:117: @ipv4_avail = system("ping #{opt} 1 8.8.8.8 #{out}")
+gems/subset_24/rcs-common-9.6.0/lib/rcs-common/evidence/mail.rb:31:Received: by 10.64.33.143 with HTTP; Mon, 1 Jul 2013 03:11:15 -0700 (PDT)
+gems/subset_28/open-dock-0.1.18/lib/open-dock/providers/vagrant.rb:50: say "\nIp: Every IP in the 192.168.0.0 range"
+gems/subset_28/ruby-netcdf-0.7.1.1/extconf.rb:45: ncversion.sub!(/^([^\.]+\.[^\.]+\.[^\.]+).+$/,'\1') # e.g. 4.2.1.1 -> 4.2.1
+gems/subset_29/devise_sociable-0.1.0/vendor/bundle/gems/actionpack-3.2.11/lib/action_dispatch/middleware/remote_ip.rb:11: 172\.(1[6-9]|2[0-9]|3[0-1]) | # private IP in the range 172.16.0.0 .. 172.31.255.255
+gems/subset_30/openstudio-standards-0.1.1/lib/openstudio-standards/standards/Standards.AirLoopHVAC.rb:959: OpenStudio::logFree(OpenStudio::Info, 'openstudio.standards.AirLoopHVAC', "For #{self.name}: non-integrated economizer per 6.5.1.3 exception a, DX VAV system.")
+gems/subset_30/openstudio-standards-0.1.1/lib/openstudio-standards/standards/Standards.AirLoopHVAC.rb:963: OpenStudio::logFree(OpenStudio::Info, 'openstudio.standards.AirLoopHVAC', "For #{self.name}: non-integrated economizer per 6.5.1.3 exception b, DX system less than #{minimum_capacity_btu_per_hr}Btu/hr.")
+gems/subset_30/openstudio-standards-0.1.1/lib/openstudio-standards/standards/Standards.AirLoopHVAC.rb:982: OpenStudio::logFree(OpenStudio::Info, 'openstudio.standards.AirLoopHVAC', "For #{self.name}: non-integrated economizer per 6.5.1.3 exception c, climate zone #{climate_zone}.")
+gems/subset_30/openstudio-standards-0.1.1/lib/openstudio-standards/standards/Standards.AirLoopHVAC.rb:2211: OpenStudio::logFree(OpenStudio::Info, 'openstudio.standards.AirLoopHVAC', "For #{self.name}: Supply air temperature reset is not required per 6.5.3.4 Exception 1, the system is located in climate zone #{climate_zone}.")
+gems/subset_30/openstudio-standards-0.1.1/lib/openstudio-standards/standards/Standards.PlantLoop.rb:325: OpenStudio::logFree(OpenStudio::Info, 'openstudio.standards.PlantLoop', "For #{self.name}: supply water temperature reset not required for variable flow systems per 6.5.4.3 Exception b.")
+gems/subset_30/openstudio-standards-0.1.1/lib/openstudio-standards/standards/Standards.Space.rb:1293: OpenStudio::logFree(OpenStudio::Info, "openstudio.model.Space", "For #{vintage} #{self.name}, primary sidelighting control not required because sidelighted effective aperture < 0.1 per 9.4.1.4 Exception b.")
+gems/subset_30/openstudio-standards-0.1.1/lib/openstudio-standards/standards/Standards.Space.rb:1322: OpenStudio::logFree(OpenStudio::Info, "openstudio.model.Space", "For #{vintage} #{self.name}, toplighting control not required because skylight effective aperture < 0.006 per 9.4.1.5 Exception b.")
+gems/subset_31/cisco_node_utils-1.2.0/tests/test_aaa_authorization_service.rb:36: 'tacacs-server host 10.122.197.197 key testing123',
+gems/subset_31/cisco_node_utils-1.2.0/tests/test_snmp_notification_receiver.rb:40: config('no snmp-server host 4.5.6.7 informs version 3 priv ab udp-port 45',
+gems/subset_31/metabridge-0.1.3/lib/meta_bridge/cli.rb:18: Device found: 10.10.1.50 00:27:22:d4:d5:da\x5
+gems/subset_31/metabridge-0.1.3/lib/meta_bridge/cli.rb:19: Device found: 10.10.1.79 ac:22:0b:45:99:49\x5
+gems/subset_31/metabridge-0.1.3/lib/meta_bridge/cli.rb:20: Device found: 10.10.1.82 ac:22:0b:67:94:91\x5
+gems/subset_31/metabridge-0.1.3/lib/meta_bridge/cli.rb:28: device_str += set_color(device.ip.ljust(16), :yellow) # 255.255.255.255
+gems/subset_32/ansible4ozw-0.0.7/lib/ansible/knx/dpt/dpt3.rb:82: 2.6.3.5 Behavior
+gems/subset_32/moneybookers-0.0.1/lib/moneybookers.rb:12: SERVICE_IPS = %w{213.129.75.201 213.129.75.203 91.208.28.7 91.208.28.8 91.208.28.9 91.208.28.4 91.208.28.5 91.208.28.6
+gems/subset_32/moneybookers-0.0.1/lib/moneybookers.rb:13: 193.105.47.4 193.105.47.5 193.105.47.6 193.105.47.7 193.105.47.8 193.105.47.9}
+gems/subset_33/ownlan-0.4.6/lib/ownlan/cli.rb:16: ownlan --attack client --target-ip 192.168.0.1 --interface eth0 --delay 0
+gems/subset_34/asa_console-0.1.2/script/test_names.rb:18: asa.config_exec!("name 192.0.2.1 ASATest1 description What's in a name? That which we call a rose...")
+gems/subset_34/asa_console-0.1.2/script/test_names.rb:19: asa.config_exec!("name 192.0.2.2 ASATest2")
+gems/subset_34/knife-terremark-0.5.0/lib/chef/knife/terremark_server_create.rb:92:echo nameserver 208.67.222.222 > /etc/resolv.conf
+gems/subset_34/knife-terremark-0.5.0/lib/chef/knife/terremark_server_create.rb:93:echo nameserver 208.67.220.220 >> /etc/resolv.conf
+gems/subset_35/github-pages-health-check-1.1.1/lib/github-pages-health-check/domain.rb:8: 207.97.227.245
+gems/subset_35/github-pages-health-check-1.1.1/lib/github-pages-health-check/domain.rb:9: 204.232.175.78
+gems/subset_35/github-pages-health-check-1.1.1/lib/github-pages-health-check/domain.rb:10: 199.27.73.133
+gems/subset_35/github-pages-health-check-1.1.1/lib/github-pages-health-check/domain.rb:14: 192.30.252.153
+gems/subset_35/github-pages-health-check-1.1.1/lib/github-pages-health-check/domain.rb:15: 192.30.252.154
+gems/subset_36/intersect_rails_composer-0.0.7/recipes/extras.rb:45: raise "Please update rvm gem to 1.11.3.5 or newer"
+gems/subset_36/openxml-docx-0.10.4/lib/openxml/docx/attribute_builder.rb:300: raise ArgumentError, message unless value.is_a?(String) && value =~ /-?[0-9]+(\.[0-9]+)?%/ # Regex supplied in sec. 22.9.2.9 of Office Open XML docs
+gems/subset_36/openxml-docx-0.10.4/lib/openxml/docx/elements/embed_bold.rb:8: attribute :font_key, displays_as: :fontKey, matches: /\{[0-9A-F]{8}\-[0-9A-F]{4}\-[0-9A-F]{4}\-[0-9A-F]{4}\-[0-9A-F]{12}\}/ # Regex taken from spec section 22.9.2.4
+gems/subset_36/openxml-docx-0.10.4/lib/openxml/docx/elements/embed_bold_italic.rb:8: attribute :font_key, displays_as: :fontKey, matches: /\{[0-9A-F]{8}\-[0-9A-F]{4}\-[0-9A-F]{4}\-[0-9A-F]{4}\-[0-9A-F]{12}\}/ # Regex taken from spec section 22.9.2.4
+gems/subset_36/openxml-docx-0.10.4/lib/openxml/docx/elements/embed_italic.rb:8: attribute :font_key, displays_as: :fontKey, matches: /\{[0-9A-F]{8}\-[0-9A-F]{4}\-[0-9A-F]{4}\-[0-9A-F]{4}\-[0-9A-F]{12}\}/ # Regex taken from spec section 22.9.2.4
+gems/subset_36/openxml-docx-0.10.4/lib/openxml/docx/elements/embed_regular.rb:8: attribute :font_key, displays_as: :fontKey, matches: /\{[0-9A-F]{8}\-[0-9A-F]{4}\-[0-9A-F]{4}\-[0-9A-F]{4}\-[0-9A-F]{12}\}/ # Regex taken from spec section 22.9.2.4
+gems/subset_36/openxml-docx-0.10.4/lib/openxml/drawingml/elements/preset_geometry.rb:204: wedgeRoundRectCallout ) # Office Open XML spec section 20.1.10.55
+gems/subset_36/openxml-docx-0.10.4/lib/openxml/drawingml/elements/shape_guide.rb:17: def ok_formulae # Office Open XML spec section 20.1.9.11
+gems/subset_37/when_exe-0.4.6/lib/when_exe/basictypes.rb:219: when /\A(\d{4})(\d{2})(\d{2})\z/ ; return nil, [$1.to_i, $2.to_i, $3.to_i] # 5.2.1.1
+gems/subset_37/when_exe-0.4.6/lib/when_exe/basictypes.rb:220: when /\A(\d{4})-(\d{2})\z/ ; return nil, [$1.to_i, $2.to_i] # 5.2.1.2
+gems/subset_37/when_exe-0.4.6/lib/when_exe/basictypes.rb:221: when /\A(\d{4})\z/ ; return nil, [$1.to_i] # 5.2.1.2
+gems/subset_37/when_exe-0.4.6/lib/when_exe/basictypes.rb:222: when extra_reg[0] ; return :century,[$1.to_i * 100] # 5.2.1.2
+gems/subset_37/when_exe-0.4.6/lib/when_exe/basictypes.rb:223: when /\A(\d{4})(\d{3})\z/ ; return :day, [$1.to_i, $2.to_i] # 5.2.2.1
+gems/subset_37/when_exe-0.4.6/lib/when_exe/basictypes.rb:225: when extra_reg[1] ; return nil, [$1.to_i, $2.to_i, $3.to_i] # 5.2.1.4 a)
+gems/subset_37/when_exe-0.4.6/lib/when_exe/basictypes.rb:226: when extra_reg[2] ; return nil, [$1.to_i, $2.to_i] # 5.2.1.4 b)
+gems/subset_37/when_exe-0.4.6/lib/when_exe/basictypes.rb:227: when extra_reg[3] ; return nil, [$1.to_i] # 5.2.1.4 c)
+gems/subset_37/when_exe-0.4.6/lib/when_exe/basictypes.rb:228: when extra_reg[4] ; return :week, [$1.to_i, $2.to_i, _int($3)] # 5.2.3.4 a-b)
+gems/subset_37/when_exe-0.4.6/lib/when_exe/basictypes.rb:229: when extra_reg[5] ; return :century,[$1.to_i * 100] # 5.2.1.4 d)
+gems/subset_37/when_exe-0.4.6/lib/when_exe/basictypes.rb:230: when extra_reg[6] ; return :century,[$1.to_i * 100] unless by # 5.2.1.4 d)
+gems/subset_37/when_exe-0.4.6/lib/when_exe/basictypes.rb:231: when extra_reg[7] ; return :day, [$1.to_i, $2.to_i] # 5.2.2.3 a)
+gems/subset_37/when_exe-0.4.6/lib/when_exe/basictypes.rb:237: when /\A(\d{2})(\d{2})(\d{2})\z/ ; return nil, [_century($1,by), $2.to_i, $3.to_i] # 5.2.1.3 a)
+gems/subset_37/when_exe-0.4.6/lib/when_exe/basictypes.rb:238: when /\A-(\d{2})(\d{2})?\z/ ; return nil, [_century($1,by), _int($2)] # 5.2.1.3 b-c)
+gems/subset_37/when_exe-0.4.6/lib/when_exe/basictypes.rb:239: when /\A--(\d{2})(\d{2})?\z/ ; return nil, [by, $1.to_i, _int($2)] # 5.2.1.3 d-e)
+gems/subset_37/when_exe-0.4.6/lib/when_exe/basictypes.rb:240: when /\A(\d{2})(\d{3})\z/ ; return :day, [_century($1,by), $2.to_i] # 5.2.2.2 a)
+gems/subset_37/when_exe-0.4.6/lib/when_exe/basictypes.rb:241: when /\A-(\d{3})\z/ ; return :day, [by, $1.to_i] # 5.2.2.2 b)
+gems/subset_37/when_exe-0.4.6/lib/when_exe/basictypes.rb:242: when /\A(\d{2})W(\d{2})(\d{1})?\z/ ; return :week, [_century($1,by), $2.to_i, _int($3)] # 5.2.3.3 a-b)
+gems/subset_37/when_exe-0.4.6/lib/when_exe/basictypes.rb:243: when /\A-(\d{1})W(\d{2})(\d{1})?\z/ ; return :week, [_decade($1,by), $2.to_i, _int($3)] # 5.2.3.3 c-d)
+gems/subset_37/when_exe-0.4.6/lib/when_exe/basictypes.rb:244: when /\A-W(\d{2})(\d{1})?\z/ ; return :week, [by, $1.to_i, _int($2)] # 5.2.3.3 e-f)
+gems/subset_37/when_exe-0.4.6/lib/when_exe/basictypes.rb:250: when /\A---(\d{2})\z/ ; return nil, [by, bm, $1.to_i] # 5.2.1.3 f)
+gems/subset_37/when_exe-0.4.6/lib/when_exe/basictypes.rb:251: when /\A-W-(\d{1})\z/ ; return :week, [by, bm, $1.to_i] # 5.2.3.3 g)
+gems/subset_37/when_exe-0.4.6/lib/when_exe/tmreference.rb:1244: Instant.new(date) # See JIS X7108 5.3.2.2 e) When::TM::Period は直接 JulianDate を保持できない
+gems/subset_38/tdiary-contrib-5.0.0/util/estraier-search/estraier-register.rb:28: puts "hyper-estraier-register.rb $Revision: 1.1.2.13 $"
+gems/subset_38/tdiary-contrib-5.0.0/util/rast-search/rast-register.rb:23: puts "rast-register.rb $Revision: 1.10.2.2 $"
+gems/subset_41/angular-rails4-templates-0.4.1/vendor/ruby/2.1.0/gems/actionpack-4.1.13/lib/action_dispatch/middleware/remote_ip.rb:36: ^172\.(1[6-9]|2[0-9]|3[0-1])\.| # private IPv4 range 172.16.0.0 .. 172.31.255.255
+gems/subset_41/angular-rails4-templates-0.4.1/vendor/ruby/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/remote_ip.rb:38: "172.16.0.0/12", # private IPv4 range 172.16.0.0 .. 172.31.255.255
+gems/subset_41/fault_tolerant_router-1.1.0/lib/fault_tolerant_router/generate_config.rb:16: ip: 1.0.0.2
+gems/subset_41/fault_tolerant_router-1.1.0/lib/fault_tolerant_router/generate_config.rb:17: gateway: 1.0.0.1
+gems/subset_41/fault_tolerant_router-1.1.0/lib/fault_tolerant_router/generate_config.rb:25: ip: 2.0.0.2
+gems/subset_41/fault_tolerant_router-1.1.0/lib/fault_tolerant_router/generate_config.rb:26: gateway: 2.0.0.1
+gems/subset_41/fault_tolerant_router-1.1.0/lib/fault_tolerant_router/generate_config.rb:51: - 8.8.8.8
+gems/subset_41/fault_tolerant_router-1.1.0/lib/fault_tolerant_router/generate_config.rb:52: - 8.8.4.4
+gems/subset_41/fault_tolerant_router-1.1.0/lib/fault_tolerant_router/generate_config.rb:53: - 208.67.222.222
+gems/subset_41/fault_tolerant_router-1.1.0/lib/fault_tolerant_router/generate_config.rb:54: - 208.67.220.220
+gems/subset_41/fault_tolerant_router-1.1.0/lib/fault_tolerant_router/generate_config.rb:55: - 4.2.2.2
+gems/subset_41/fault_tolerant_router-1.1.0/lib/fault_tolerant_router/generate_config.rb:56: - 4.2.2.3
+gems/subset_41/iqeo-hostspec-0.1.1/lib/iqeo/hostspec/runner.rb:82: io.puts " address : 1.0.0.1 => 1.0.0.1"
+gems/subset_41/iqeo-hostspec-0.1.1/lib/iqeo/hostspec/runner.rb:83: io.puts " address w/mask : 2.0.0.1/24 => 2.0.0.0 2.0.0.1 ... 2.0.0.254 2.0.0.255"
+gems/subset_41/iqeo-hostspec-0.1.1/lib/iqeo/hostspec/runner.rb:84: io.puts " address w/values : 3.0.0.10,20,30 => 3.0.0.10 3.0.0.20 3.0.0.30"
+gems/subset_41/iqeo-hostspec-0.1.1/lib/iqeo/hostspec/runner.rb:85: io.puts " address w/ranges : 4.0.0.40-50 => 4.0.0.40 4.0.0.41 ... 4.0.0.49 4.0.0.50"
+gems/subset_41/iqeo-hostspec-0.1.1/lib/iqeo/hostspec/runner.rb:86: io.puts " address w/combo : 5.0.0.2,4-6,8 => 5.0.0.2 5.0.0.4 5.0.0.5 5.0.0.6 5.0.0.8"
+gems/subset_41/iqeo-hostspec-0.1.1/lib/iqeo/hostspec/runner.rb:87: io.puts " multiple octets : 6.1-2,3.4-5.6 => 6.1.4.6 6.1.5.6 6.2.4.6 6.2.5.6 6.3.4.6 6.3.5.6"
+gems/subset_44/ospfv2-0.0.3/lib/packet/hello.rb:352: Destination: 224.0.0.5 (224.0.0.5)
+gems/subset_44/ospfv2-0.0.3/lib/packet/hello.rb:364: Network Mask: 255.255.255.0
+gems/subset_44/redmint_composer-2.3/recipes/extras.rb:45: raise "Please update rvm gem to 1.11.3.5 or newer"
+gems/subset_45/cloud-toaster-1.1.6/chef/cookbooks/lxc/recipes/setup_host.rb:146: /sbin/ifconfig #{node["network"]["host"]["bridge_device"]} #{node["network"]["gateway"]} netmask 255.255.0.0 promisc up
+gems/subset_45/dvash-0.1.1/lib/dvash/os/windows.rb:18: system("route add #{address} mask 255.255.255.255 10.255.255.255 if 1 -p")
+gems/subset_45/rails-base-0.0.5/lib/template.rb:2879: raise "Please update rvm gem to 1.11.3.5 or newer"
+gems/subset_48/chef-vpc-toolkit-2.8.2/lib/chef-vpc-toolkit/vpn_openvpn.rb:19:/sbin/route add -net #{@group.vpn_network} netmask 255.255.128.0 gw #{@group.vpn_network.chomp("0")+"1"}
+gems/subset_50/swift-pyrite-0.1.1/vendor/bundle/ruby/2.0.0/gems/parslet-1.7.1/example/ip_address.rb:108: 255.255.255.255
+gems/subset_51/kitchen-hyperv-0.1.10/lib/kitchen/driver/powershell.rb:131: Set-VMNetworkConfiguration -ipaddress "#{config[:ip_address]}" -subnet 255.255.255.0 |
+gems/subset_51/nsidc-fog-1.24.1/lib/fog/rackspace/examples/compute_v2/create_network.rb:40:#create private network called my_private_net with an ip range between 192.168.0.1 - 192.168.0.255 (Note this will accept IPv6 CIDRs as well)
+gems/subset_51/swipe-rails-0.0.5/vendor/bundle/gems/actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:11: 172\.(1[6-9]|2[0-9]|3[0-1]) | # private IP in the range 172.16.0.0 .. 172.31.255.255
+gems/subset_52/elf-mithril-0.0.5/lib/mithril/elf_enums.rb:5: * $FreeBSD: src/sys/sys/elf32.h,v 1.8.14.1 2005/12/30 22:13:58 marcel Exp $
+gems/subset_52/elf-mithril-0.0.5/lib/mithril/elf_enums.rb:6: * $FreeBSD: src/sys/sys/elf64.h,v 1.10.14.1 2005/12/30 22:13:58 marcel Exp $
+gems/subset_52/elf-mithril-0.0.5/lib/mithril/elf_enums.rb:7: * $FreeBSD: src/sys/sys/elf_common.h,v 1.15.8.1 2005/12/30 22:13:58 marcel Exp $
+gems/subset_52/elf-mithril-0.0.5/lib/mithril/elf_enums.rb:10: * $FreeBSD: src/sys/arm/include/elf.h,v 1.5.2.1 2006/06/30 21:42:52 cognet Exp $
+gems/subset_53/dyntool-0.4.1/lib/dyntool.rb:452: add a fqdn(a) ip example: dynamo.rb add a mynode.example.com 11.12.13.14 -m "some comment"
+gems/subset_54/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:161:attributetype ( 2.5.4.35 NAME 'userPassword' DESC 'RFC2256/2307: password of user' EQUALITY octetStringMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.40{128} )
+gems/subset_54/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:162:attributetype ( 2.5.4.3 NAME ( 'cn' 'commonName' ) DESC 'RFC2256: common name(s) for which the entity is known by' SUP name )
+gems/subset_54/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:163:attributetype ( 2.5.4.41 NAME 'name' DESC 'RFC2256: common supertype of name attributes' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{32768} )
+gems/subset_54/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:164:attributetype ( 2.5.4.49 NAME 'distinguishedName' DESC 'RFC2256: common supertype of DN attributes' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 )
+gems/subset_54/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:166:attributetype ( 2.5.4.1 NAME ( 'aliasedObjectName' 'aliasedEntryName' ) DESC 'RFC2256: name of aliased object' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 SINGLE-VALUE )
+gems/subset_54/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:168:attributetype ( 2.5.21.8 NAME 'matchingRuleUse' DESC 'RFC2252: matching rule uses' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.31 USAGE directoryOperation )
+gems/subset_54/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:169:attributetype ( 2.5.21.6 NAME 'objectClasses' DESC 'RFC2252: object classes' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.37 USAGE directoryOperation )
+gems/subset_54/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:170:attributetype ( 2.5.21.5 NAME 'attributeTypes' DESC 'RFC2252: attribute types' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.3 USAGE directoryOperation )
+gems/subset_54/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:171:attributetype ( 2.5.21.4 NAME 'matchingRules' DESC 'RFC2252: matching rules' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.30 USAGE directoryOperation )
+gems/subset_54/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:181:attributetype ( 2.5.18.10 NAME 'subschemaSubentry' DESC 'RFC2252: name of controlling subschema entry' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+gems/subset_54/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:182:attributetype ( 2.5.18.9 NAME 'hasSubordinates' DESC 'X.501: entry has children' EQUALITY booleanMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.7 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+gems/subset_54/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:183:attributetype ( 2.5.18.4 NAME 'modifiersName' DESC 'RFC2252: name of last modifier' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+gems/subset_54/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:184:attributetype ( 2.5.18.3 NAME 'creatorsName' DESC 'RFC2252: name of creator' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+gems/subset_54/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:185:attributetype ( 2.5.18.2 NAME 'modifyTimestamp' DESC 'RFC2252: time which object was last modified' EQUALITY generalizedTimeMatch ORDERING generalizedTimeOrderingMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.24 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+gems/subset_54/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:186:attributetype ( 2.5.18.1 NAME 'createTimestamp' DESC 'RFC2252: time which object was created' EQUALITY generalizedTimeMatch ORDERING generalizedTimeOrderingMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.24 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+gems/subset_54/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:187:attributetype ( 2.5.21.9 NAME 'structuralObjectClass' DESC 'X.500(93): structural object class of entry' EQUALITY objectIdentifierMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.38 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+gems/subset_54/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:188:attributetype ( 2.5.4.0 NAME 'objectClass' DESC 'RFC2256: object classes of the entity' EQUALITY objectIdentifierMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.38 )
+gems/subset_54/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:190:attributetype ( 2.5.21.1 NAME 'dITStructureRules' EQUALITY integerFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.17 USAGE directoryOperation )
+gems/subset_54/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:191:attributetype ( 2.5.21.7 NAME 'nameForms' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.35 USAGE directoryOperation )
+gems/subset_54/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:192:attributetype ( 2.5.21.2 NAME 'dITContentRules' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.16 USAGE directoryOperation )
+gems/subset_54/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:194:objectclass ( 2.5.20.1 NAME 'subschema' DESC 'RFC2252: controlling subschema (sub)entry' AUXILIARY MAY ( dITStructureRules $ nameForms $ ditContentRules $ objectClasses $ attributeTypes $ matchingRules $ matchingRuleUse ) )
+gems/subset_54/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:196:#objectClass ( 2.5.17.0 NAME 'subentry' SUP top STRUCTURAL MUST ( cn $ subtreeSpecification ) )
+gems/subset_54/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:199:objectClass ( 2.5.6.1 NAME 'alias' DESC 'RFC2256: an alias' SUP top STRUCTURAL MUST aliasedObjectName )
+gems/subset_54/deveo-ruby-ldapserver-0.5.2/lib/ldap/server/schema.rb:201:objectClass ( 2.5.6.0 NAME 'top' DESC 'top of the superclass chain' ABSTRACT MUST objectClass )
+gems/subset_55/fairchild-poolparty-1.3.17/lib/dependency_resolvers/chef/resources/route.rb:19:* <tt>netmask</tt> The decimal representation of the network mask eg 255.255.255.0
+gems/subset_55/ipaddress-0.8.3/lib/ipaddress/ipv4.rb:31: /^10./ => 16, # Class B, from 128.0.0.0 to 191.255.255.255
+gems/subset_55/ipaddress-0.8.3/lib/ipaddress/ipv4.rb:32: /^110/ => 24 # Class C, D and E, from 192.0.0.0 to 255.255.255.254
+gems/subset_56/chef-extensions-0.4.0/lib/chef-extensions.rb:15: `ping -c 1 8.8.8.8 -W 2`.include? "1 received"
+gems/subset_56/fog-maestrodev-1.20.0.20140305101839/lib/fog/rackspace/examples/compute_v2/create_network.rb:40:#create private network called my_private_net with an ip range between 192.168.0.1 - 192.168.0.255 (Note this will accept IPv6 CIDRs as well)
+gems/subset_57/ladle-1.0.1/lib/ladle/server.rb:374: %r{attributeType w/ OID 2.5.4.16 not registered},
+gems/subset_57/sumodev-1.2.1/lib/sumodev/commands/box.rb:78:nameserver 10.11.12.13
+gems/subset_58/auser-poolparty-1.3.17/lib/dependency_resolvers/chef/resources/route.rb:19:* <tt>netmask</tt> The decimal representation of the network mask eg 255.255.255.0
+gems/subset_59/jruby-jruby-openssl-0.5.0.4/lib/openssl/buffering.rb:14: $Id: buffering.rb,v 1.5.2.4 2005/09/04 22:03:24 gotoyuzo Exp $
+gems/subset_59/jruby-jruby-openssl-0.5.0.4/lib/openssl/cipher.rb:14: $Id: cipher.rb,v 1.1.2.2 2006/06/20 11:18:15 gotoyuzo Exp $
+gems/subset_59/jruby-jruby-openssl-0.5.0.4/lib/openssl/digest.rb:14: $Id: digest.rb,v 1.1.2.2 2006/06/20 11:18:15 gotoyuzo Exp $
+gems/subset_59/jruby-jruby-openssl-0.5.0.4/lib/openssl/ssl.rb:14: $Id: ssl.rb,v 1.5.2.6 2006/05/23 18:14:05 gotoyuzo Exp $
+gems/subset_59/jruby-jruby-openssl-0.5.0.4/lib/openssl/x509.rb:14: $Id: x509.rb,v 1.4.2.2 2004/12/19 08:28:33 gotoyuzo Exp $
+gems/subset_59/wukong-4.0.0/examples/server_logs/logline.rb:45: (\S+) # ip 83.240.154.3
+gems/subset_59/wukong-4.0.0/examples/server_logs/models.rb:52: (\S+) # ip 83.240.154.3
+gems/subset_59/wukong-4.0.0/examples/serverlogs/models/logline.rb:84: (\S+) # ip_address 83.240.154.3
+gems/subset_59/wukong-4.0.0/lib/wukong/source/source_runner.rb:17: 205.4.75.208 - 3918471017 [27/Nov/2012:05:06:57 -0600] "GET /products/eget HTTP/1.0" 200 25600
+gems/subset_59/wukong-4.0.0/lib/wukong/source/source_runner.rb:18: 63.181.105.15 - 3650805763 [27/Nov/2012:05:06:57 -0600] "GET /products/lacinia-nulla-vitae HTTP/1.0" 200 3790
+gems/subset_59/wukong-4.0.0/lib/wukong/source/source_runner.rb:19: 227.190.78.101 - 39543891 [27/Nov/2012:05:06:58 -0600] "GET /products/odio-nulla-nulla-ipsum HTTP/1.0" 200 31718
+gems/subset_60/ul-wukong-4.1.1/examples/server_logs/logline.rb:45: (\S+) # ip 83.240.154.3
+gems/subset_60/ul-wukong-4.1.1/examples/server_logs/models.rb:52: (\S+) # ip 83.240.154.3
+gems/subset_60/ul-wukong-4.1.1/examples/serverlogs/models/logline.rb:84: (\S+) # ip_address 83.240.154.3
+gems/subset_60/ul-wukong-4.1.1/lib/wukong/source/source_runner.rb:17: 205.4.75.208 - 3918471017 [27/Nov/2012:05:06:57 -0600] "GET /products/eget HTTP/1.0" 200 25600
+gems/subset_60/ul-wukong-4.1.1/lib/wukong/source/source_runner.rb:18: 63.181.105.15 - 3650805763 [27/Nov/2012:05:06:57 -0600] "GET /products/lacinia-nulla-vitae HTTP/1.0" 200 3790
+gems/subset_60/ul-wukong-4.1.1/lib/wukong/source/source_runner.rb:19: 227.190.78.101 - 39543891 [27/Nov/2012:05:06:58 -0600] "GET /products/odio-nulla-nulla-ipsum HTTP/1.0" 200 31718
+gems/subset_61/rails_apps_composer-3.1.7/recipes/extras.rb:45: raise "Please update rvm gem to 1.11.3.5 or newer"
+gems/subset_61/saltr-0.2.0/lib/help.rb:33:ufw allow from 52.6.10.1 to any port 22 # put master's ip address
+gems/subset_61/saltr-0.2.0/lib/help.rb:36:ufw delete allow from 52.6.10.1 to any port 22
+gems/subset_62/graphael-on-rails-0.5.1/vendor/bundle/gems/actionpack-3.2.11/lib/action_dispatch/middleware/remote_ip.rb:11: 172\.(1[6-9]|2[0-9]|3[0-1]) | # private IP in the range 172.16.0.0 .. 172.31.255.255
+gems/subset_62/super-test-1.0.6/lib/common/data_house.rb:354: host: 10.81.13.169
+gems/subset_64/brickwall-0.1.0/lib/brickwall/pingback.rb:4: 174.36.92.186
+gems/subset_64/brickwall-0.1.0/lib/brickwall/pingback.rb:5: 174.36.92.187
+gems/subset_64/brickwall-0.1.0/lib/brickwall/pingback.rb:6: 174.36.92.192
+gems/subset_64/brickwall-0.1.0/lib/brickwall/pingback.rb:7: 174.36.96.66
+gems/subset_64/brickwall-0.1.0/lib/brickwall/pingback.rb:8: 174.37.14.28
+gems/subset_66/mbailey-chef-0.9.12.2/lib/chef/knife/terremark_server_create.rb:93:echo nameserver 208.67.222.222 > /etc/resolv.conf
+gems/subset_66/mbailey-chef-0.9.12.2/lib/chef/knife/terremark_server_create.rb:94:echo nameserver 208.67.220.220 >> /etc/resolv.conf
+gems/subset_66/parslet-1.7.1/example/ip_address.rb:108: 255.255.255.255
+gems/subset_67/ghazel-parslet-1.4.0.2/example/ip_address.rb:108: 255.255.255.255
+gems/subset_69/railscast-assets-0.0.2/vendor/bundle/gems/actionpack-3.2.11/lib/action_dispatch/middleware/remote_ip.rb:11: 172\.(1[6-9]|2[0-9]|3[0-1]) | # private IP in the range 172.16.0.0 .. 172.31.255.255
+gems/subset_69/railscast-assets-0.0.2/vendor/bundle/gems/backbone-forms-on-rails-0.10.0/vendor/bundle/gems/actionpack-3.2.11/lib/action_dispatch/middleware/remote_ip.rb:11: 172\.(1[6-9]|2[0-9]|3[0-1]) | # private IP in the range 172.16.0.0 .. 172.31.255.255
+gems/subset_70/amqp-1.6.0/examples/hello_world_with_large_payload.rb:266: Some host TCP stacks may implement a "half-duplex" close sequence, as Linux or HP-UX do. If such a host actively closes a connection but still has not read all the incoming data the stack already received from the link, this host sends a RST instead of a FIN (Section 4.2.2.13 in RFC 1122). This allows a TCP application to be sure the remote application has read all the data the former sent—waiting the FIN from the remote side, when it actively closes the connection. However, the remote TCP stack cannot distinguish between a Connection Aborting RST and this Data Loss RST. Both cause the remote stack to throw away all the data it received, but that the application still didn't read.[clarification needed]
+gems/subset_71/isaac_toolbelt-0.1.4/lib/isaac_toolbelt.rb:136: until system('ping -W 10 -c 1 192.168.2.15 > /dev/null 2>&1') do
+gems/subset_72/tdiary-5.0.0/misc/plugin/disp_referrer.rb:44:- disp_referrer2.rb,v 1.1.2.104 commited as disp_referrer.rb
+gems/subset_72/tdiary-5.0.0/misc/plugin/en/disp_referrer.rb:26:- disp_referrer2.rb,v 1.1.2.104 commited as disp_referrer.rb
+gems/subset_72/tdiary-5.0.0/misc/plugin/ja/disp_referrer.rb:166:- disp_referrer2.rb,v 1.1.2.104 commited as disp_referrer.rb
+gems/subset_72/warbler-1.4.9/lib/warbler/jar.rb:290: zipfile.mkdir(entry.dup) # in case it's frozen rubyzip 0.9.6.1 workaround
+gems/subset_73/exception_handling-1.2.1/lib/exception_handling.rb:59:REMOTE_ADDR: 10.251.34.225
+gems/subset_73/fluent-plugin-mobile-carrier-0.0.4/lib/fluent/plugin/out_mobile_carrier.rb:89: IPV4MASK = 0xFFFFFFFF # 255.255.255.255
+gems/subset_73/ns-fog-1.22.11/lib/fog/rackspace/examples/compute_v2/create_network.rb:40:#create private network called my_private_net with an ip range between 192.168.0.1 - 192.168.0.255 (Note this will accept IPv6 CIDRs as well)
+gems/subset_73/port_scanner-0.1.0/lib/port_scanner/cli.rb:18: $> port_scanner scan 192.169.1.2 22
+gems/subset_73/port_scanner-0.1.0/lib/port_scanner/cli.rb:21: $> port_scanner scan 192.169.1.2 12345 # an unknown service?
+gems/subset_74/fc-webicons-0.0.4/vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:11: 172\.(1[6-9]|2[0-9]|3[0-1]) | # private IP in the range 172.16.0.0 .. 172.31.255.255
+gems/subset_75/wukong-load-0.1.1/lib/wukong-load/source_runner.rb:18: 205.4.75.208 - 3918471017 [27/Nov/2012:05:06:57 -0600] "GET /products/eget HTTP/1.0" 200 25600
+gems/subset_75/wukong-load-0.1.1/lib/wukong-load/source_runner.rb:19: 63.181.105.15 - 3650805763 [27/Nov/2012:05:06:57 -0600] "GET /products/lacinia-nulla-vitae HTTP/1.0" 200 3790
+gems/subset_75/wukong-load-0.1.1/lib/wukong-load/source_runner.rb:20: 227.190.78.101 - 39543891 [27/Nov/2012:05:06:58 -0600] "GET /products/odio-nulla-nulla-ipsum HTTP/1.0" 200 31718
+gems/subset_77/collins_shell-0.2.23/lib/collins_shell/console.rb:12: if cmplns.is_a?(Array) then # Work around for breakage between pry 0.9.9.6 and 0.9.12
+gems/subset_77/SkypeR-0.0.9/lib/skyper/object.rb:512: * INPUT - New in API version 3.5.0.202 Can have following values:
+gems/subset_77/SkypeR-0.0.9/lib/skyper/object.rb:516: * OUTPUT - can have all the same values as INPUT property. New in API version 3.5.0.202
+gems/subset_77/SkypeR-0.0.9/lib/skyper/object.rb:517: * CAPTURE_MIC - can have all the same values as INPUT and OUTPUT properties. New in API version 3.5.0.202
+gems/subset_77/watobo-0.9.21/modules/active/Apache/multiview.rb:36:<address>Apache/2.2.22 (Debian) Server at 192.168.70.134 Port 80</address>
+gems/subset_77/watobo-0.9.21/modules/active/Apache/multiview.rb:76:<address>Apache/2.2.22 (Debian) Server at 192.168.70.134 Port 80</address>
+gems/subset_77/watobo-0.9.21/modules/active/shell_shock/shell_shock.rb:35:<address>Apache/2.2.22 (Debian) Server at 192.168.70.134 Port 80</address>
+gems/subset_79/bosh-cloudfoundry-0.7.6/lib/bosh/cli/commands/02_create_cf.rb:27: err("USAGE: bosh create cf --ip 1.2.3.4 -- please provide one IP address that will be bound to router.") if ip_addresses.blank?
+gems/subset_79/construqt-ipaddress-0.8.4/lib/ipaddress/ipv4.rb:31: /^10./ => 16, # Class B, from 128.0.0.0 to 191.255.255.255
+gems/subset_79/construqt-ipaddress-0.8.4/lib/ipaddress/ipv4.rb:32: /^110/ => 24 # Class C, D and E, from 192.0.0.0 to 255.255.255.254
+gems/subset_79/gnms-2.1.1/lib/cmd_parse.rb:223: ipbroadcast=`#{$config.ping_path} 255.255.255.255 -b -c 2 -n 2>&1 | grep ^64 | awk '{ print $4 }'`
+gems/subset_79/gnms-2.1.1/lib/external/jjmx.rb:4:#./jjmx.rb 192.168.2.10 9003 user pass "java.lang:type=Memory" "heap_memory_usage non_heap_memory_usage"
+gems/subset_79/pftg-jruby-openssl-0.5.3/lib/openssl/buffering.rb:14: $Id: buffering.rb,v 1.5.2.4 2005/09/04 22:03:24 gotoyuzo Exp $
+gems/subset_79/pftg-jruby-openssl-0.5.3/lib/openssl/cipher.rb:14: $Id: cipher.rb,v 1.1.2.2 2006/06/20 11:18:15 gotoyuzo Exp $
+gems/subset_79/pftg-jruby-openssl-0.5.3/lib/openssl/digest.rb:14: $Id: digest.rb,v 1.1.2.2 2006/06/20 11:18:15 gotoyuzo Exp $
+gems/subset_79/pftg-jruby-openssl-0.5.3/lib/openssl/ssl.rb:14: $Id: ssl.rb,v 1.5.2.6 2006/05/23 18:14:05 gotoyuzo Exp $
+gems/subset_79/pftg-jruby-openssl-0.5.3/lib/openssl/x509.rb:14: $Id: x509.rb,v 1.4.2.2 2004/12/19 08:28:33 gotoyuzo Exp $
+gems/subset_79/validate_as_email-3.0.0/lib/validate_as_email/rspec.rb:42: 8.8.8.8
+gems/subset_80/challah-rolls-0.2.0/vendor/bundle/gems/actionpack-3.2.7/lib/action_dispatch/middleware/remote_ip.rb:11: 172\.(1[6-9]|2[0-9]|3[0-1]) | # private IP in the range 172.16.0.0 .. 172.31.255.255
+gems/subset_80/challah-rolls-0.2.0/vendor/bundle/gems/actionpack-3.2.8/lib/action_dispatch/middleware/remote_ip.rb:11: 172\.(1[6-9]|2[0-9]|3[0-1]) | # private IP in the range 172.16.0.0 .. 172.31.255.255
+gems/subset_80/challah-rolls-0.2.0/vendor/bundle/gems/actionpack-3.2.9/lib/action_dispatch/middleware/remote_ip.rb:11: 172\.(1[6-9]|2[0-9]|3[0-1]) | # private IP in the range 172.16.0.0 .. 172.31.255.255
+gems/subset_80/challah-rolls-0.2.0/vendor/bundle/gems/challah-0.8.0.pre/vendor/bundle/gems/actionpack-3.2.7/lib/action_dispatch/middleware/remote_ip.rb:11: 172\.(1[6-9]|2[0-9]|3[0-1]) | # private IP in the range 172.16.0.0 .. 172.31.255.255
+gems/subset_80/challah-rolls-0.2.0/vendor/bundle/gems/challah-0.8.3/vendor/bundle/gems/actionpack-3.2.8/lib/action_dispatch/middleware/remote_ip.rb:11: 172\.(1[6-9]|2[0-9]|3[0-1]) | # private IP in the range 172.16.0.0 .. 172.31.255.255
+gems/subset_80/challah-rolls-0.2.0/vendor/bundle/gems/challah-0.8.3/vendor/bundle/gems/actionpack-3.2.9/lib/action_dispatch/middleware/remote_ip.rb:11: 172\.(1[6-9]|2[0-9]|3[0-1]) | # private IP in the range 172.16.0.0 .. 172.31.255.255
+gems/subset_80/codesake-dawn-1.2.99/lib/codesake/dawn/kb/cve_2012_1241.rb:9: message="GRScript18.dll before 1.2.2.0 in ActiveScriptRuby (ASR) before 1.8.7 does not properly restrict interaction with an Internet Explorer ActiveX environment, which allows remote attackers to execute arbitrary Ruby code via a crafted HTML document."
+gems/subset_80/codesake-dawn-1.2.99/lib/codesake/dawn/kb/cve_2013_4478.rb:9: message = "Sup before 0.13.2.1 and 0.14.x before 0.14.1.1 allows remote attackers to execute arbitrary commands via shell metacharacters in the filename of an email attachment."
+gems/subset_80/codesake-dawn-1.2.99/lib/codesake/dawn/kb/cve_2013_4479.rb:9: message = "lib/sup/message_chunks.rb in Sup before 0.13.2.1 and 0.14.x before 0.14.1.1 allows remote attackers to execute arbitrary commands via shell metacharacters in the content_type of an email attachment."
+gems/subset_80/codesake-dawn-1.2.99/lib/codesake/dawn/kb/cve_2013_7086.rb:9: message = "The message function in lib/webbynode/notify.rb in the Webbynode gem 1.0.5.3 and earlier for Ruby allows context-dependent attackers to execute arbitrary commands via shell metacharacters in a growlnotify message."
+gems/subset_81/mclaunch-0.0.4/lib/mclaunch.rb:112: opts.on('--ban-ip 11.22.33.44 [REASON]', String, "ban IP") do |arg|
+gems/subset_81/naked-chef-0.9.15.3/lib/chef/knife/terremark_server_create.rb:93:echo nameserver 208.67.222.222 > /etc/resolv.conf
+gems/subset_81/naked-chef-0.9.15.3/lib/chef/knife/terremark_server_create.rb:94:echo nameserver 208.67.220.220 >> /etc/resolv.conf
+gems/subset_82/actionpack-4.2.6/lib/action_dispatch/middleware/remote_ip.rb:38: "172.16.0.0/12", # private IPv4 range 172.16.0.0 .. 172.31.255.255
+gems/subset_82/pvcglue-0.1.35/lib/pvcglue/local.rb:55: result = `ip route get 8.8.8.8 2>&1 | awk '{print $NF; exit}'`.strip # Ubuntu
+gems/subset_82/pvcglue-0.1.35/lib/pvcglue/local.rb:219: inet 10.0.2.15/24 brd 10.0.2.255 scope global eth0
+gems/subset_82/pvcglue-0.1.35/lib/pvcglue/local.rb:225: inet 10.10.10.208/24 brd 10.10.10.255 scope global eth1
+gems/subset_82/pvcglue-0.1.35/lib/pvcglue/local.rb:231: inet 172.28.128.3/24 brd 172.28.128.255 scope global eth2
+gems/subset_82/sapoku-0.3/lib/sapoku.rb:113:netmask 255.255.255.0
+gems/subset_82/sapoku-0.3/lib/sapoku.rb:114:gateway 10.0.3.1
+gems/subset_82/weary-1.1.3/lib/weary.rb:6: "Firefox 1.5.0.12 - Mac" => "Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.12) Gecko/20070508 Firefox/1.5.0.12",
+gems/subset_82/weary-1.1.3/lib/weary.rb:7: "Firefox 1.5.0.12 - Windows" => "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.12) Gecko/20070508 Firefox/1.5.0.12",
+gems/subset_82/weary-1.1.3/lib/weary.rb:8: "Firefox 2.0.0.12 - Mac" => "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.12) Gecko/20080201 Firefox/2.0.0.12",
+gems/subset_82/weary-1.1.3/lib/weary.rb:9: "Firefox 2.0.0.12 - Windows" => "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.12) Gecko/20080201 Firefox/2.0.0.12",
+gems/subset_83/fhcap-cli-0.4.5/lib/fhcap/dns.rb:16: fhcap dns create_record --domain *.test.skunkhenry.com --ipaddress 192.168.33.10
+gems/subset_83/knife-infoblox-0.1.5/lib/chef/knife/infoblox_host.rb:30: description: 'suggest a starting IP. e.g. If you expect hostname1 to have 10.10.10.120 allocated'
+gems/subset_83/tunneler-0.0.1/lib/tunneler/cli.rb:100: "Examples: tunneler -b 120.1.2.3 -d 121.2.3.4 ssh\n" +
+gems/subset_83/tunneler-0.0.1/lib/tunneler/cli.rb:101: " tunneler -b 120.1.2.3 -d 121.2.3.4 scp local_file destination_file\n" +
+gems/subset_83/tunneler-0.0.1/lib/tunneler/cli.rb:102: " tunneler -b 120.1.2.3 -d 121.2.3.4 execute whoami\n"
+gems/subset_84/airck-0.1.8/lib/action_dispatch/middleware/remote_ip.rb:11: 172\.(1[6-9]|2[0-9]|3[0-1]) | # private IP in the range 172.16.0.0 .. 172.31.255.255
+gems/subset_86/Sipper-1.1.3/sipper/sdp/sdp.rb:39: o=jdoe 2890844526 2890842807 IN IP4 10.47.16.5
+gems/subset_86/Sipper-1.1.3/sipper/sdp/sdp_parser.rb:40: o=jdoe 2890844526 2890842807 IN IP4 10.47.16.5
+gems/subset_86/Sipper-1.1.3/sipper/transaction/transaction.rb:10: Td = 32000 # 17.1.1.2
+gems/subset_86/Sipper-1.1.3/sipper_test/test_sdp.rb:22:o=jdoe 2890844526 2890842807 IN IP4 10.47.16.5
+gems/subset_86/Sipper-1.1.3/sipper_test/test_sdp.rb:37:o=jdoe 2890844526 2890842807 IN IP4 10.47.16.5
+gems/subset_86/Sipper-1.1.3/sipper_test/test_sdp.rb:52:o=jdoe 2890844526 2890842807 IN IP4 10.47.16.5
+gems/subset_86/Sipper-1.1.3/sipper_test/test_sdp.rb:65:o=jdoe 2890844526 2890842807 IN IP4 10.47.16.5
+gems/subset_86/Sipper-1.1.3/sipper_test/test_sdp_parser.rb:58:o=1234 53655765 2353687637 IN IP4 10.17.131.251
+gems/subset_86/Sipper-1.1.3/sipper_test/test_sdp_parser.rb:60:c=IN IP4 10.171.131.251
+gems/subset_86/Sipper-1.1.3/sipper_test/test_sdp_parser.rb:100:o=jdoe 2890844526 2890842807 IN IP4 10.47.16.5
+gems/subset_86/Sipper-1.1.3/sipper_test/test_sdp_parser.rb:115:o=jdoe 2890844526 2890842807 IN IP4 10.47.16.5
+gems/subset_88/ClsRuby-1.1.2/tests/tc_formatters.rb:67: 192.0.0.1
+gems/subset_89/myaxes-0.1.2/lib/myaxes/options.rb:20: opt.separator "shell> myaxes -g web -a 192.168.0.101 -u web301 -p qwerty"
+gems/subset_89/relevance_ipaddress-0.5.0/lib/ipaddress/ipv4.rb:32: /^10./ => 16, # Class B, from 128.0.0.0 to 191.255.255.255
+gems/subset_89/relevance_ipaddress-0.5.0/lib/ipaddress/ipv4.rb:33: /^110/ => 24 # Class C, D and E, from 192.0.0.0 to 255.255.255.254
+gems/subset_90/activejob-lock-0.0.2/rails/actionpack/lib/action_dispatch/middleware/remote_ip.rb:38: "172.16.0.0/12", # private IPv4 range 172.16.0.0 .. 172.31.255.255
+gems/subset_91/ang-9.19.0/net/multicast_test.rb:32:* check your route table, a entry should exist on 224.0.0.0
+gems/subset_91/x-real-ip-0.2.1/lib/x-real-ip.rb:16: "172.16.0.0/12", # private IPv4 range 172.16.0.0 .. 172.31.255.255
+gems/subset_92/snmpdumper-0.0.4/lib/snmpwalk_reader.rb:73: Example: .1.3.6.1.2.1.1.1.0 = STRING: Linux host.local 2.6.17.6 #1 SMP Thu Mar 8 15:32:13 CET 2007 i686\n
+gems/subset_95/docgenerator-2.1.1/unittest/unittest_creole.rb:522:****Listentry 2.2.1.1
+gems/subset_95/docgenerator-2.1.1/unittest/unittest_wikimedia.rb:136:****Listentry 2.2.1.1
+gems/subset_96/luna_scanner-0.0.3/lib/luna_scanner/device.rb:48:netmask 255.255.252.0
+gems/subset_96/luna_scanner-0.0.3/lib/luna_scanner/device.rb:49:gateway 8.128.3.254
+gems/subset_97/hpcloud-2.0.10/lib/hpcloud/commands/addresses/associate.rb:33: hpcloud addresses:associate 111.111.111.111 myport # Associate the address `111.111.111.111` to port `myport`
+gems/subset_97/hpcloud-2.0.10/lib/hpcloud/commands/addresses/remove.rb:33: hpcloud addresses:remove 111.111.111.111 # Remove IP address '111.111.111.111'
+gems/subset_97/hpcloud-2.0.10/lib/hpcloud/commands/lb/nodes/add.rb:32: hpcloud lb:nodes:add loady 10.1.1.1 80 # Create a new node for load balancer 'loady'
+gems/subset_97/hpcloud-2.0.10/lib/hpcloud/commands/servers/ssh.rb:33: hpcloud servers:ssh 15.185.104.210 # Use the secure shell to log into server with given public IP, which has a known key pair known to the CLI
+gems/subset_97/hpcloud-2.0.10/lib/hpcloud/commands/subnets/update.rb:32: hpcloud subnets:update subwoofer -n 100.1.1.1 -d # Update 'subwoofer' with new DNS and DHCP
+gems/subset_97/roast-0.2.0/lib/roast/cli.rb:26: > roast add 10.0.1.1 something.dev
+gems/subset_97/roast-0.2.0/lib/roast/cli.rb:32: > roast disable 10.0.1.1
+gems/subset_97/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:161:attributetype ( 2.5.4.35 NAME 'userPassword' DESC 'RFC2256/2307: password of user' EQUALITY octetStringMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.40{128} )
+gems/subset_97/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:162:attributetype ( 2.5.4.3 NAME ( 'cn' 'commonName' ) DESC 'RFC2256: common name(s) for which the entity is known by' SUP name )
+gems/subset_97/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:163:attributetype ( 2.5.4.41 NAME 'name' DESC 'RFC2256: common supertype of name attributes' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{32768} )
+gems/subset_97/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:164:attributetype ( 2.5.4.49 NAME 'distinguishedName' DESC 'RFC2256: common supertype of DN attributes' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 )
+gems/subset_97/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:166:attributetype ( 2.5.4.1 NAME ( 'aliasedObjectName' 'aliasedEntryName' ) DESC 'RFC2256: name of aliased object' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 SINGLE-VALUE )
+gems/subset_97/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:168:attributetype ( 2.5.21.8 NAME 'matchingRuleUse' DESC 'RFC2252: matching rule uses' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.31 USAGE directoryOperation )
+gems/subset_97/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:169:attributetype ( 2.5.21.6 NAME 'objectClasses' DESC 'RFC2252: object classes' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.37 USAGE directoryOperation )
+gems/subset_97/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:170:attributetype ( 2.5.21.5 NAME 'attributeTypes' DESC 'RFC2252: attribute types' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.3 USAGE directoryOperation )
+gems/subset_97/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:171:attributetype ( 2.5.21.4 NAME 'matchingRules' DESC 'RFC2252: matching rules' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.30 USAGE directoryOperation )
+gems/subset_97/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:181:attributetype ( 2.5.18.10 NAME 'subschemaSubentry' DESC 'RFC2252: name of controlling subschema entry' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+gems/subset_97/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:182:attributetype ( 2.5.18.9 NAME 'hasSubordinates' DESC 'X.501: entry has children' EQUALITY booleanMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.7 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+gems/subset_97/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:183:attributetype ( 2.5.18.4 NAME 'modifiersName' DESC 'RFC2252: name of last modifier' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+gems/subset_97/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:184:attributetype ( 2.5.18.3 NAME 'creatorsName' DESC 'RFC2252: name of creator' EQUALITY distinguishedNameMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.12 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+gems/subset_97/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:185:attributetype ( 2.5.18.2 NAME 'modifyTimestamp' DESC 'RFC2252: time which object was last modified' EQUALITY generalizedTimeMatch ORDERING generalizedTimeOrderingMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.24 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+gems/subset_97/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:186:attributetype ( 2.5.18.1 NAME 'createTimestamp' DESC 'RFC2252: time which object was created' EQUALITY generalizedTimeMatch ORDERING generalizedTimeOrderingMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.24 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+gems/subset_97/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:187:attributetype ( 2.5.21.9 NAME 'structuralObjectClass' DESC 'X.500(93): structural object class of entry' EQUALITY objectIdentifierMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.38 SINGLE-VALUE NO-USER-MODIFICATION USAGE directoryOperation )
+gems/subset_97/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:188:attributetype ( 2.5.4.0 NAME 'objectClass' DESC 'RFC2256: object classes of the entity' EQUALITY objectIdentifierMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.38 )
+gems/subset_97/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:190:attributetype ( 2.5.21.1 NAME 'dITStructureRules' EQUALITY integerFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.17 USAGE directoryOperation )
+gems/subset_97/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:191:attributetype ( 2.5.21.7 NAME 'nameForms' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.35 USAGE directoryOperation )
+gems/subset_97/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:192:attributetype ( 2.5.21.2 NAME 'dITContentRules' EQUALITY objectIdentifierFirstComponentMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.16 USAGE directoryOperation )
+gems/subset_97/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:194:objectclass ( 2.5.20.1 NAME 'subschema' DESC 'RFC2252: controlling subschema (sub)entry' AUXILIARY MAY ( dITStructureRules $ nameForms $ ditContentRules $ objectClasses $ attributeTypes $ matchingRules $ matchingRuleUse ) )
+gems/subset_97/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:196:#objectClass ( 2.5.17.0 NAME 'subentry' SUP top STRUCTURAL MUST ( cn $ subtreeSpecification ) )
+gems/subset_97/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:199:objectClass ( 2.5.6.1 NAME 'alias' DESC 'RFC2256: an alias' SUP top STRUCTURAL MUST aliasedObjectName )
+gems/subset_97/ruby-ldapserver-0.5.3/lib/ldap/server/schema.rb:201:objectClass ( 2.5.6.0 NAME 'top' DESC 'top of the superclass chain' ABSTRACT MUST objectClass )
+gems/subset_98/pione-0.5.0/lib/pione/test-helper/internet-connectivity.rb:5: `ping -c 3 -W 1 8.8.8.8 >> /dev/null`
+gems/subset_98/przelewy24_payment-0.2.0/lib/przelewy24_payment.rb:35: @@allowed_ips = %w(91.216.191.181 91.216.191.182 91.216.191.183 91.216.191.184 91.216.191.185)
+gems/subset_98/staypuft-0.5.26/app/lib/staypuft/seeder.rb:20: 'swift_all_ips' => %w(192.168.203.1 192.168.203.2 192.168.203.3 192.168.203.4),
+gems/subset_98/staypuft-0.5.26/app/lib/staypuft/seeder.rb:31: 'mysql_clu_member_addrs' => '192.168.203.11 192.168.203.12 192.168.203.13',

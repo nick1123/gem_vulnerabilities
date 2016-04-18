@@ -51,15 +51,13 @@ def break_into_lines(command_results)
   command_results.strip.split("\n").map {|line| line.strip }
 end
 
-last = 10
-last = ARGV[0].to_i if !ARGV[0].nil?
+last = 9
+last = ARGV[0].to_i - 1 if !ARGV[0].nil?
 
-puts (1..last).inject([]) { |results, dir_num|
+puts (0..last).inject([]) { |results, dir_num|
   results.concat(
     remove_undesirable_lines(
       execute(
-        search_for_ip_address_command("gem_subset_#{dir_num}"))))
+        search_for_ip_address_command("gems/subset_#{dir_num.to_s.rjust(2, '0')}"))))
 }.join("\n")
-
-
 
